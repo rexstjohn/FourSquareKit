@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8FF48FB2-C5C4-403B-9663-5A5F40C43D38</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FourSquareSDK</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>264E3424-5056-4B69-9564-BD1530243C91</key>
+		<string>https://github.com/rexstjohn/FourSquareSDK-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FourSquareSDK.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>264E3424-5056-4B69-9564-BD1530243C91</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rexstjohn/FourSquareSDK-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>264E3424-5056-4B69-9564-BD1530243C91</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>264E3424-5056-4B69-9564-BD1530243C91</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FourSquareSDK-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
