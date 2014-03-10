@@ -23,10 +23,8 @@ static const NSString* FOURSQUARE_VENUE_PHOTOS_PATH = @"photos";
 static const NSInteger DEFAULT_RANGE_METERS = 800;
 static const NSString* DEFAULT_SECTION = @"food";
 
-// Static keys.
-static const NSString* FOURSQUARE_CLIENT_ID = @"XXX";
-static const NSString* FOURSQUARE_CLIENT_SECRET = @"XXX";
-static const NSString* FOURSQUARE_CALLBACK_URL = @"FourSquareKit://foursquare";
+@interface UXRFourSquareNetworkingEngine()
+@end
 
 @implementation UXRFourSquareNetworkingEngine
 
@@ -54,6 +52,14 @@ static const NSString* FOURSQUARE_CALLBACK_URL = @"FourSquareKit://foursquare";
     return _sharedInstance;
 }
 
++(void)registerFourSquareEngineWithClientId:(NSString*)client
+                                  andSecret:(NSString*)secret
+                             andCallBackURL:(NSString*)callback{
+    UXRFourSquareNetworkingEngine *instance = UXRFourSquareNetworkingEngine.sharedInstance;
+    instance.clientSecret = secret;
+    instance.clientId = client;
+    instance.callBackURL = callback;
+}
 
 #pragma mark - Rendering models
 
@@ -89,7 +95,7 @@ static const NSString* FOURSQUARE_CALLBACK_URL = @"FourSquareKit://foursquare";
     [formatter setDateFormat:@"YYYYMMDD"];
     NSDate *now = [NSDate date];
     NSString *stringFromDate = [formatter stringFromDate:now];
-    NSMutableDictionary *authDict = [NSMutableDictionary dictionaryWithDictionary: @{@"client_id":FOURSQUARE_CLIENT_ID, @"client_secret":FOURSQUARE_CLIENT_SECRET, @"v":stringFromDate}];
+    NSMutableDictionary *authDict = [NSMutableDictionary dictionaryWithDictionary: @{@"client_id":self.clientId, @"client_secret":self.clientSecret, @"v":stringFromDate}];
     [authDict addEntriesFromDictionary:dictionary];
     return [NSDictionary dictionaryWithDictionary:authDict];
 }

@@ -14,23 +14,9 @@
 		51F4FA1F18CD640C0016675E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4FA1E18CD640C0016675E /* main.m */; };
 		51F4FA2318CD640C0016675E /* UXRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4FA2218CD640C0016675E /* UXRAppDelegate.m */; };
 		51F4FA2518CD640C0016675E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F4FA2418CD640C0016675E /* Images.xcassets */; };
-		51F4FA2C18CD640C0016675E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4FA2B18CD640C0016675E /* XCTest.framework */; };
-		51F4FA2D18CD640C0016675E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4FA1218CD640C0016675E /* Foundation.framework */; };
-		51F4FA2E18CD640C0016675E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4FA1618CD640C0016675E /* UIKit.framework */; };
-		51F4FA3618CD640C0016675E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51F4FA3418CD640C0016675E /* InfoPlist.strings */; };
-		51F4FA3818CD640C0016675E /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4FA3718CD640C0016675E /* DemoTests.m */; };
 		51F4FA4218CD641B0016675E /* libFourSquareKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4FA4118CD641B0016675E /* libFourSquareKit.a */; };
+		51F4FA7218CD66C20016675E /* UXRFourSquareTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4FA7118CD66C20016675E /* UXRFourSquareTableViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		51F4FA2F18CD640C0016675E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 51F4FA0718CD640C0016675E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 51F4FA0E18CD640C0016675E;
-			remoteInfo = Demo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		51F4FA0F18CD640C0016675E /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,12 +30,10 @@
 		51F4FA2118CD640C0016675E /* UXRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UXRAppDelegate.h; sourceTree = "<group>"; };
 		51F4FA2218CD640C0016675E /* UXRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UXRAppDelegate.m; sourceTree = "<group>"; };
 		51F4FA2418CD640C0016675E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		51F4FA2A18CD640C0016675E /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F4FA2B18CD640C0016675E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		51F4FA3318CD640C0016675E /* DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoTests-Info.plist"; sourceTree = "<group>"; };
-		51F4FA3518CD640C0016675E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		51F4FA3718CD640C0016675E /* DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTests.m; sourceTree = "<group>"; };
 		51F4FA4118CD641B0016675E /* libFourSquareKit.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libFourSquareKit.a; path = "../FourSquareKit/build/Debug-iphoneos/libFourSquareKit.a"; sourceTree = "<group>"; };
+		51F4FA7018CD66C20016675E /* UXRFourSquareTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRFourSquareTableViewController.h; sourceTree = "<group>"; };
+		51F4FA7118CD66C20016675E /* UXRFourSquareTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRFourSquareTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,16 +48,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51F4FA2718CD640C0016675E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				51F4FA2C18CD640C0016675E /* XCTest.framework in Frameworks */,
-				51F4FA2E18CD640C0016675E /* UIKit.framework in Frameworks */,
-				51F4FA2D18CD640C0016675E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				51F4FA1818CD640C0016675E /* Demo */,
-				51F4FA3118CD640C0016675E /* DemoTests */,
 				51F4FA1118CD640C0016675E /* Frameworks */,
 				51F4FA1018CD640C0016675E /* Products */,
 			);
@@ -91,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				51F4FA0F18CD640C0016675E /* Demo.app */,
-				51F4FA2A18CD640C0016675E /* DemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +83,7 @@
 		51F4FA1818CD640C0016675E /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				51F4FA7318CD67100016675E /* ViewControllers */,
 				51F4FA2118CD640C0016675E /* UXRAppDelegate.h */,
 				51F4FA2218CD640C0016675E /* UXRAppDelegate.m */,
 				51F4FA2418CD640C0016675E /* Images.xcassets */,
@@ -130,22 +103,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		51F4FA3118CD640C0016675E /* DemoTests */ = {
+		51F4FA7318CD67100016675E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				51F4FA3718CD640C0016675E /* DemoTests.m */,
-				51F4FA3218CD640C0016675E /* Supporting Files */,
+				51F4FA7018CD66C20016675E /* UXRFourSquareTableViewController.h */,
+				51F4FA7118CD66C20016675E /* UXRFourSquareTableViewController.m */,
 			);
-			path = DemoTests;
-			sourceTree = "<group>";
-		};
-		51F4FA3218CD640C0016675E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				51F4FA3318CD640C0016675E /* DemoTests-Info.plist */,
-				51F4FA3418CD640C0016675E /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,24 +132,6 @@
 			productReference = 51F4FA0F18CD640C0016675E /* Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		51F4FA2918CD640C0016675E /* DemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 51F4FA3E18CD640C0016675E /* Build configuration list for PBXNativeTarget "DemoTests" */;
-			buildPhases = (
-				51F4FA2618CD640C0016675E /* Sources */,
-				51F4FA2718CD640C0016675E /* Frameworks */,
-				51F4FA2818CD640C0016675E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				51F4FA3018CD640C0016675E /* PBXTargetDependency */,
-			);
-			name = DemoTests;
-			productName = DemoTests;
-			productReference = 51F4FA2A18CD640C0016675E /* DemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,11 +141,6 @@
 				CLASSPREFIX = UXR;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "UX-RX";
-				TargetAttributes = {
-					51F4FA2918CD640C0016675E = {
-						TestTargetID = 51F4FA0E18CD640C0016675E;
-					};
-				};
 			};
 			buildConfigurationList = 51F4FA0A18CD640C0016675E /* Build configuration list for PBXProject "Demo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -214,7 +155,6 @@
 			projectRoot = "";
 			targets = (
 				51F4FA0E18CD640C0016675E /* Demo */,
-				51F4FA2918CD640C0016675E /* DemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,14 +169,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51F4FA2818CD640C0016675E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				51F4FA3618CD640C0016675E /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -246,40 +178,17 @@
 			files = (
 				51F4FA2318CD640C0016675E /* UXRAppDelegate.m in Sources */,
 				51F4FA1F18CD640C0016675E /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		51F4FA2618CD640C0016675E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				51F4FA3818CD640C0016675E /* DemoTests.m in Sources */,
+				51F4FA7218CD66C20016675E /* UXRFourSquareTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		51F4FA3018CD640C0016675E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 51F4FA0E18CD640C0016675E /* Demo */;
-			targetProxy = 51F4FA2F18CD640C0016675E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		51F4FA1B18CD640C0016675E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				51F4FA1C18CD640C0016675E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		51F4FA3418CD640C0016675E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				51F4FA3518CD640C0016675E /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -387,48 +296,6 @@
 			};
 			name = Release;
 		};
-		51F4FA3F18CD640C0016675E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "DemoTests/DemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		51F4FA4018CD640C0016675E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
-				INFOPLIST_FILE = "DemoTests/DemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -446,14 +313,6 @@
 			buildConfigurations = (
 				51F4FA3C18CD640C0016675E /* Debug */,
 				51F4FA3D18CD640C0016675E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		51F4FA3E18CD640C0016675E /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				51F4FA3F18CD640C0016675E /* Debug */,
-				51F4FA4018CD640C0016675E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

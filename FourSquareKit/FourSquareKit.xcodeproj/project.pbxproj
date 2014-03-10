@@ -41,7 +41,6 @@
 		51F4F9D518CD63D40016675E /* UXRFourSquareTipModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4F9B318CD63D40016675E /* UXRFourSquareTipModel.m */; };
 		51F4F9D618CD63D40016675E /* UXRFourSquareUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4F9B518CD63D40016675E /* UXRFourSquareUserModel.m */; };
 		51F4F9D718CD63D40016675E /* UXRJSONDeserializableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4F9B718CD63D40016675E /* UXRJSONDeserializableObject.m */; };
-		51F4F9D818CD63D40016675E /* UXRBaseNetworkingEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4F9BB18CD63D40016675E /* UXRBaseNetworkingEngine.m */; };
 		51F4F9D918CD63D40016675E /* UXRFourSquareNetworkingEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4F9BD18CD63D40016675E /* UXRFourSquareNetworkingEngine.m */; };
 		51F4F9F218CD63F40016675E /* NSAlert+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4F9DD18CD63F40016675E /* NSAlert+MKNetworkKitAdditions.m */; };
 		51F4F9F318CD63F40016675E /* NSAlert+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4F9DD18CD63F40016675E /* NSAlert+MKNetworkKitAdditions.m */; };
@@ -94,7 +93,6 @@
 		51F4FA6B18CD65C20016675E /* UXRFourSquareTipModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4F9B318CD63D40016675E /* UXRFourSquareTipModel.m */; };
 		51F4FA6C18CD65C20016675E /* UXRFourSquareUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4F9B518CD63D40016675E /* UXRFourSquareUserModel.m */; };
 		51F4FA6D18CD65C20016675E /* UXRJSONDeserializableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4F9B718CD63D40016675E /* UXRJSONDeserializableObject.m */; };
-		51F4FA6E18CD65C20016675E /* UXRBaseNetworkingEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4F9BB18CD63D40016675E /* UXRBaseNetworkingEngine.m */; };
 		51F4FA6F18CD65C20016675E /* UXRFourSquareNetworkingEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4F9BD18CD63D40016675E /* UXRFourSquareNetworkingEngine.m */; };
 /* End PBXBuildFile section */
 
@@ -186,8 +184,6 @@
 		51F4F9B618CD63D40016675E /* UXRJSONDeserializableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRJSONDeserializableObject.h; sourceTree = "<group>"; };
 		51F4F9B718CD63D40016675E /* UXRJSONDeserializableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRJSONDeserializableObject.m; sourceTree = "<group>"; };
 		51F4F9B818CD63D40016675E /* UXRJSONSerializableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRJSONSerializableObject.h; sourceTree = "<group>"; };
-		51F4F9BA18CD63D40016675E /* UXRBaseNetworkingEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRBaseNetworkingEngine.h; sourceTree = "<group>"; };
-		51F4F9BB18CD63D40016675E /* UXRBaseNetworkingEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRBaseNetworkingEngine.m; sourceTree = "<group>"; };
 		51F4F9BC18CD63D40016675E /* UXRFourSquareNetworkingEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRFourSquareNetworkingEngine.h; sourceTree = "<group>"; };
 		51F4F9BD18CD63D40016675E /* UXRFourSquareNetworkingEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRFourSquareNetworkingEngine.m; sourceTree = "<group>"; };
 		51F4F9DC18CD63F40016675E /* NSAlert+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAlert+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
@@ -398,8 +394,6 @@
 		51F4F9B918CD63D40016675E /* networking */ = {
 			isa = PBXGroup;
 			children = (
-				51F4F9BA18CD63D40016675E /* UXRBaseNetworkingEngine.h */,
-				51F4F9BB18CD63D40016675E /* UXRBaseNetworkingEngine.m */,
 				51F4F9BC18CD63D40016675E /* UXRFourSquareNetworkingEngine.h */,
 				51F4F9BD18CD63D40016675E /* UXRFourSquareNetworkingEngine.m */,
 			);
@@ -547,7 +541,6 @@
 				51F4F9D018CD63D40016675E /* UXRFourSquarePriceModel.m in Sources */,
 				51F4F9C718CD63D40016675E /* UXRFourSquareContactModel.m in Sources */,
 				51F4F9BF18CD63D40016675E /* CLLocation+Testing.m in Sources */,
-				51F4F9D818CD63D40016675E /* UXRBaseNetworkingEngine.m in Sources */,
 				51F4F9C318CD63D40016675E /* UXRBaseModel.m in Sources */,
 				51F4F9D618CD63D40016675E /* UXRFourSquareUserModel.m in Sources */,
 				51F4F9D718CD63D40016675E /* UXRJSONDeserializableObject.m in Sources */,
@@ -606,7 +599,6 @@
 				51F4FA6D18CD65C20016675E /* UXRJSONDeserializableObject.m in Sources */,
 				51F4FA6C18CD65C20016675E /* UXRFourSquareUserModel.m in Sources */,
 				51F4FA6018CD65C20016675E /* UXRFourSquareHoursModel.m in Sources */,
-				51F4FA6E18CD65C20016675E /* UXRBaseNetworkingEngine.m in Sources */,
 				51F4FA0318CD63F40016675E /* MKNetworkOperation.m in Sources */,
 				51F4F9FF18CD63F40016675E /* UIImageView+MKNetworkKitAdditions.m in Sources */,
 				51F4FA6218CD65C20016675E /* UXRFourSquareLocationModel.m in Sources */,

@@ -16,7 +16,13 @@ typedef void (^UXRFourSquareEngineErrorBlock)(NSError *error);
 
 @interface UXRFourSquareNetworkingEngine : MKNetworkEngine
 
+@property(nonatomic,strong) NSString *clientId;
+@property(nonatomic,strong) NSString *clientSecret;
+@property(nonatomic,strong) NSString *callBackURL;
+
 +(UXRFourSquareNetworkingEngine*) sharedInstance;
+
++(void)registerFourSquareEngineWithClientId:(NSString*)client andSecret:(NSString*)secret andCallBackURL:(NSString*)callback;
 
 - (void)getRestaurantsWithCompletionBlock:(UXRFourSquareEngineRestaurantsCompletionBlock)completionBlock
                              failureBlock:(UXRFourSquareEngineErrorBlock)errorBlock;
