@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		511C57DD18CD4BC7004125DA /* UXRBaseEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C57DB18CD4BC7004125DA /* UXRBaseEngineTests.m */; };
+		511C57DE18CD4BC7004125DA /* UXRFourSquareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C57DC18CD4BC7004125DA /* UXRFourSquareTests.m */; };
+		511C57E018CD4BF0004125DA /* libFourSquareKit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 511C57DF18CD4BF0004125DA /* libFourSquareKit-iOS.a */; };
 		5186580B18CD492500E8F486 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5186580A18CD492500E8F486 /* XCTest.framework */; };
 		5186580C18CD492500E8F486 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518657F118CD492500E8F486 /* Foundation.framework */; };
 		5186580D18CD492500E8F486 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518657F518CD492500E8F486 /* UIKit.framework */; };
@@ -15,10 +18,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		511C57DA18CD4BC7004125DA /* UXRAsyncTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRAsyncTesting.h; sourceTree = "<group>"; };
+		511C57DB18CD4BC7004125DA /* UXRBaseEngineTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRBaseEngineTests.m; sourceTree = "<group>"; };
+		511C57DC18CD4BC7004125DA /* UXRFourSquareTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRFourSquareTests.m; sourceTree = "<group>"; };
+		511C57DF18CD4BF0004125DA /* libFourSquareKit-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libFourSquareKit-iOS.a"; path = "../FourSquareKit-iOS/build/Debug-iphoneos/libFourSquareKit-iOS.a"; sourceTree = "<group>"; };
 		518657F118CD492500E8F486 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		518657F318CD492500E8F486 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		518657F518CD492500E8F486 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		5186580918CD492500E8F486 /* FourSquareKit-TestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FourSquareKit-TestsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5186580918CD492500E8F486 /* FourSquareKit-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FourSquareKit-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5186580A18CD492500E8F486 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5186581218CD492500E8F486 /* FourSquareKit-TestsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FourSquareKit-TestsTests-Info.plist"; sourceTree = "<group>"; };
 		5186581418CD492500E8F486 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -30,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				511C57E018CD4BF0004125DA /* libFourSquareKit-iOS.a in Frameworks */,
 				5186580B18CD492500E8F486 /* XCTest.framework in Frameworks */,
 				5186580D18CD492500E8F486 /* UIKit.framework in Frameworks */,
 				5186580C18CD492500E8F486 /* Foundation.framework in Frameworks */,
@@ -51,7 +59,7 @@
 		518657EF18CD492500E8F486 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5186580918CD492500E8F486 /* FourSquareKit-TestsTests.xctest */,
+				5186580918CD492500E8F486 /* FourSquareKit-Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +67,7 @@
 		518657F018CD492500E8F486 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				511C57DF18CD4BF0004125DA /* libFourSquareKit-iOS.a */,
 				518657F118CD492500E8F486 /* Foundation.framework */,
 				518657F318CD492500E8F486 /* CoreGraphics.framework */,
 				518657F518CD492500E8F486 /* UIKit.framework */,
@@ -70,11 +79,13 @@
 		5186581018CD492500E8F486 /* FourSquareKit-Tests */ = {
 			isa = PBXGroup;
 			children = (
+				511C57DA18CD4BC7004125DA /* UXRAsyncTesting.h */,
+				511C57DB18CD4BC7004125DA /* UXRBaseEngineTests.m */,
+				511C57DC18CD4BC7004125DA /* UXRFourSquareTests.m */,
 				5186581618CD492500E8F486 /* FourSquareKit_Tests.m */,
 				5186581118CD492500E8F486 /* Supporting Files */,
 			);
-			name = "FourSquareKit-Tests";
-			path = "FourSquareKit-TestsTests";
+			path = "FourSquareKit-Tests";
 			sourceTree = "<group>";
 		};
 		5186581118CD492500E8F486 /* Supporting Files */ = {
@@ -104,7 +115,7 @@
 			);
 			name = "FourSquareKit-Tests";
 			productName = "FourSquareKit-TestsTests";
-			productReference = 5186580918CD492500E8F486 /* FourSquareKit-TestsTests.xctest */;
+			productReference = 5186580918CD492500E8F486 /* FourSquareKit-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -155,6 +166,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				511C57DD18CD4BC7004125DA /* UXRBaseEngineTests.m in Sources */,
+				511C57DE18CD4BC7004125DA /* UXRFourSquareTests.m in Sources */,
 				5186581718CD492500E8F486 /* FourSquareKit_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +321,7 @@
 				5186581F18CD492500E8F486 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

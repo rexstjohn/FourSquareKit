@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5186580818CD492500E8F486"
-               BuildableName = "FourSquareKit-Tests.app"
+               BuildableName = "FourSquareKit-Tests.xctest"
                BlueprintName = "FourSquareKit-Tests"
                ReferencedContainer = "container:FourSquareKit-Tests.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5186580818CD492500E8F486"
-               BuildableName = "FourSquareKit-TestsTests.xctest"
+               BuildableName = "FourSquareKit-Tests.xctest"
                BlueprintName = "FourSquareKit-Tests"
                ReferencedContainer = "container:FourSquareKit-Tests.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5186580818CD492500E8F486"
-            BuildableName = "FourSquareKit-Tests.app"
+            BuildableName = "FourSquareKit-Tests.xctest"
             BlueprintName = "FourSquareKit-Tests"
             ReferencedContainer = "container:FourSquareKit-Tests.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5186580818CD492500E8F486"
-            BuildableName = "FourSquareKit-Tests.app"
+            BuildableName = "FourSquareKit-Tests.xctest"
             BlueprintName = "FourSquareKit-Tests"
             ReferencedContainer = "container:FourSquareKit-Tests.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5186580818CD492500E8F486"
-            BuildableName = "FourSquareKit-Tests.app"
+            BuildableName = "FourSquareKit-Tests.xctest"
             BlueprintName = "FourSquareKit-Tests"
             ReferencedContainer = "container:FourSquareKit-Tests.xcodeproj">
          </BuildableReference>
