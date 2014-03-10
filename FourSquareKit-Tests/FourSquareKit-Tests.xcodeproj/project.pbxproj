@@ -21,13 +21,14 @@
 		511C57DA18CD4BC7004125DA /* UXRAsyncTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRAsyncTesting.h; sourceTree = "<group>"; };
 		511C57DB18CD4BC7004125DA /* UXRBaseEngineTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRBaseEngineTests.m; sourceTree = "<group>"; };
 		511C57DC18CD4BC7004125DA /* UXRFourSquareTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRFourSquareTests.m; sourceTree = "<group>"; };
-		511C57DF18CD4BF0004125DA /* libFourSquareKit-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libFourSquareKit-iOS.a"; path = "../FourSquareKit-iOS/build/Debug-iphoneos/libFourSquareKit-iOS.a"; sourceTree = "<group>"; };
+		511C57DF18CD4BF0004125DA /* libFourSquareKit-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libFourSquareKit-iOS.a"; path = "../FourSquareKit-iOS/build/Debug-iphoneos/libFourSquareKit-iOS.a"; sourceTree = "<group>"; };
+		511C58BE18CD5233004125DA /* FourSquare-Tests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FourSquare-Tests-Prefix.pch"; sourceTree = "<group>"; };
 		518657F118CD492500E8F486 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		518657F318CD492500E8F486 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		518657F518CD492500E8F486 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5186580918CD492500E8F486 /* FourSquareKit-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FourSquareKit-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5186580A18CD492500E8F486 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		5186581218CD492500E8F486 /* FourSquareKit-TestsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FourSquareKit-TestsTests-Info.plist"; sourceTree = "<group>"; };
+		5186581218CD492500E8F486 /* FourSquareKit-Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FourSquareKit-Tests-Info.plist"; sourceTree = "<group>"; };
 		5186581418CD492500E8F486 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5186581618CD492500E8F486 /* FourSquareKit_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FourSquareKit_Tests.m; path = "../FourSquareKit-Tests/FourSquareKit_Tests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,8 +92,9 @@
 		5186581118CD492500E8F486 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5186581218CD492500E8F486 /* FourSquareKit-TestsTests-Info.plist */,
+				5186581218CD492500E8F486 /* FourSquareKit-Tests-Info.plist */,
 				5186581318CD492500E8F486 /* InfoPlist.strings */,
+				511C58BE18CD5233004125DA /* FourSquare-Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			path = "../FourSquareKit-Tests";
@@ -276,7 +278,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "FourSquareKit-TestsTests/FourSquareKit-TestsTests-Info.plist";
+				INFOPLIST_FILE = "FourSquareKit-Tests/FourSquareKit-Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -295,7 +297,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FourSquareKit-Tests/FourSquareKit-Tests-Prefix.pch";
-				INFOPLIST_FILE = "FourSquareKit-TestsTests/FourSquareKit-TestsTests-Info.plist";
+				INFOPLIST_FILE = "FourSquareKit-Tests/FourSquareKit-Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

@@ -35,6 +35,16 @@
 		511C589618CD4D5E004125DA /* UXRJSONDeserializableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C587418CD4D5E004125DA /* UXRJSONDeserializableObject.m */; };
 		511C589718CD4D5E004125DA /* UXRBaseNetworkingEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C587818CD4D5E004125DA /* UXRBaseNetworkingEngine.m */; };
 		511C589818CD4D5E004125DA /* UXRFourSquareNetworkingEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C587A18CD4D5E004125DA /* UXRFourSquareNetworkingEngine.m */; };
+		511C58B418CD50BD004125DA /* NSAlert+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C589F18CD50BD004125DA /* NSAlert+MKNetworkKitAdditions.m */; };
+		511C58B518CD50BD004125DA /* NSData+MKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C58A118CD50BD004125DA /* NSData+MKBase64.m */; };
+		511C58B618CD50BD004125DA /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C58A318CD50BD004125DA /* NSDate+RFC1123.m */; };
+		511C58B718CD50BD004125DA /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C58A518CD50BD004125DA /* NSDictionary+RequestEncoding.m */; };
+		511C58B818CD50BD004125DA /* NSString+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C58A718CD50BD004125DA /* NSString+MKNetworkKitAdditions.m */; };
+		511C58B918CD50BD004125DA /* UIAlertView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C58A918CD50BD004125DA /* UIAlertView+MKNetworkKitAdditions.m */; };
+		511C58BA18CD50BD004125DA /* UIImageView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C58AB18CD50BD004125DA /* UIImageView+MKNetworkKitAdditions.m */; };
+		511C58BB18CD50BD004125DA /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C58AD18CD50BD004125DA /* MKNetworkEngine.m */; };
+		511C58BC18CD50BD004125DA /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C58B018CD50BD004125DA /* MKNetworkOperation.m */; };
+		511C58BD18CD50BD004125DA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 511C58B318CD50BD004125DA /* Reachability.m */; };
 		5186573D18CD46C400E8F486 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5186573C18CD46C400E8F486 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,9 +119,30 @@
 		511C587818CD4D5E004125DA /* UXRBaseNetworkingEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRBaseNetworkingEngine.m; sourceTree = "<group>"; };
 		511C587918CD4D5E004125DA /* UXRFourSquareNetworkingEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRFourSquareNetworkingEngine.h; sourceTree = "<group>"; };
 		511C587A18CD4D5E004125DA /* UXRFourSquareNetworkingEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRFourSquareNetworkingEngine.m; sourceTree = "<group>"; };
+		511C589E18CD50BD004125DA /* NSAlert+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAlert+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		511C589F18CD50BD004125DA /* NSAlert+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		511C58A018CD50BD004125DA /* NSData+MKBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MKBase64.h"; sourceTree = "<group>"; };
+		511C58A118CD50BD004125DA /* NSData+MKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MKBase64.m"; sourceTree = "<group>"; };
+		511C58A218CD50BD004125DA /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
+		511C58A318CD50BD004125DA /* NSDate+RFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RFC1123.m"; sourceTree = "<group>"; };
+		511C58A418CD50BD004125DA /* NSDictionary+RequestEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RequestEncoding.h"; sourceTree = "<group>"; };
+		511C58A518CD50BD004125DA /* NSDictionary+RequestEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RequestEncoding.m"; sourceTree = "<group>"; };
+		511C58A618CD50BD004125DA /* NSString+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		511C58A718CD50BD004125DA /* NSString+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		511C58A818CD50BD004125DA /* UIAlertView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		511C58A918CD50BD004125DA /* UIAlertView+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		511C58AA18CD50BD004125DA /* UIImageView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		511C58AB18CD50BD004125DA /* UIImageView+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		511C58AC18CD50BD004125DA /* MKNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkEngine.h; sourceTree = "<group>"; };
+		511C58AD18CD50BD004125DA /* MKNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkEngine.m; sourceTree = "<group>"; };
+		511C58AE18CD50BD004125DA /* MKNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkKit.h; sourceTree = "<group>"; };
+		511C58AF18CD50BD004125DA /* MKNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkOperation.h; sourceTree = "<group>"; };
+		511C58B018CD50BD004125DA /* MKNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkOperation.m; sourceTree = "<group>"; };
+		511C58B218CD50BD004125DA /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		511C58B318CD50BD004125DA /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		5186573918CD46C400E8F486 /* libFourSquareKit-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFourSquareKit-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5186573C18CD46C400E8F486 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		5186574018CD46C400E8F486 /* FourSquareKit-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FourSquareKit-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		5186574018CD46C400E8F486 /* FourSquareKit-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FourSquareKit-iOS-Prefix.pch"; path = "../FourSquareKit-iOS/FourSquareKit-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		5186574A18CD46C400E8F486 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5186574D18CD46C400E8F486 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -209,6 +240,51 @@
 			path = ../../FourSquareKit/networking;
 			sourceTree = "<group>";
 		};
+		511C589C18CD50BD004125DA /* MKNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				511C589D18CD50BD004125DA /* Categories */,
+				511C58AC18CD50BD004125DA /* MKNetworkEngine.h */,
+				511C58AD18CD50BD004125DA /* MKNetworkEngine.m */,
+				511C58AE18CD50BD004125DA /* MKNetworkKit.h */,
+				511C58AF18CD50BD004125DA /* MKNetworkOperation.h */,
+				511C58B018CD50BD004125DA /* MKNetworkOperation.m */,
+				511C58B118CD50BD004125DA /* Reachability */,
+			);
+			name = MKNetworkKit;
+			path = ../../External/MKNetworkKit;
+			sourceTree = "<group>";
+		};
+		511C589D18CD50BD004125DA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				511C589E18CD50BD004125DA /* NSAlert+MKNetworkKitAdditions.h */,
+				511C589F18CD50BD004125DA /* NSAlert+MKNetworkKitAdditions.m */,
+				511C58A018CD50BD004125DA /* NSData+MKBase64.h */,
+				511C58A118CD50BD004125DA /* NSData+MKBase64.m */,
+				511C58A218CD50BD004125DA /* NSDate+RFC1123.h */,
+				511C58A318CD50BD004125DA /* NSDate+RFC1123.m */,
+				511C58A418CD50BD004125DA /* NSDictionary+RequestEncoding.h */,
+				511C58A518CD50BD004125DA /* NSDictionary+RequestEncoding.m */,
+				511C58A618CD50BD004125DA /* NSString+MKNetworkKitAdditions.h */,
+				511C58A718CD50BD004125DA /* NSString+MKNetworkKitAdditions.m */,
+				511C58A818CD50BD004125DA /* UIAlertView+MKNetworkKitAdditions.h */,
+				511C58A918CD50BD004125DA /* UIAlertView+MKNetworkKitAdditions.m */,
+				511C58AA18CD50BD004125DA /* UIImageView+MKNetworkKitAdditions.h */,
+				511C58AB18CD50BD004125DA /* UIImageView+MKNetworkKitAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		511C58B118CD50BD004125DA /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				511C58B218CD50BD004125DA /* Reachability.h */,
+				511C58B318CD50BD004125DA /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		5186573018CD46C400E8F486 = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +315,7 @@
 		5186573E18CD46C400E8F486 /* FourSquareKit */ = {
 			isa = PBXGroup;
 			children = (
+				511C589C18CD50BD004125DA /* MKNetworkKit */,
 				511C583E18CD4D5E004125DA /* categories */,
 				511C584918CD4D5E004125DA /* FourSquareKit.h */,
 				511C584A18CD4D5E004125DA /* models */,
@@ -310,19 +387,27 @@
 				511C588518CD4D5E004125DA /* UXRFourSquareCategoryModel.m in Sources */,
 				511C587E18CD4D5E004125DA /* CLLocation+Testing.m in Sources */,
 				511C589018CD4D5E004125DA /* UXRFourSquareReservationsModel.m in Sources */,
+				511C58B818CD50BD004125DA /* NSString+MKNetworkKitAdditions.m in Sources */,
 				511C588318CD4D5E004125DA /* UXRExploreQueryBaseModel.m in Sources */,
 				511C589818CD4D5E004125DA /* UXRFourSquareNetworkingEngine.m in Sources */,
+				511C58B418CD50BD004125DA /* NSAlert+MKNetworkKitAdditions.m in Sources */,
 				511C588E18CD4D5E004125DA /* UXRFourSquarePhotoModel.m in Sources */,
 				511C589518CD4D5E004125DA /* UXRFourSquareUserModel.m in Sources */,
+				511C58B618CD50BD004125DA /* NSDate+RFC1123.m in Sources */,
+				511C58BD18CD50BD004125DA /* Reachability.m in Sources */,
 				511C589318CD4D5E004125DA /* UXRFourSquareTimeFramesModel.m in Sources */,
 				511C589118CD4D5E004125DA /* UXRFourSquareRestaurantModel.m in Sources */,
+				511C58B718CD50BD004125DA /* NSDictionary+RequestEncoding.m in Sources */,
 				511C588A18CD4D5E004125DA /* UXRFourSquareLikesModel.m in Sources */,
 				511C587D18CD4D5E004125DA /* CLLocation+isEmpty.m in Sources */,
 				511C589218CD4D5E004125DA /* UXRFourSquareStatsModel.m in Sources */,
+				511C58BB18CD50BD004125DA /* MKNetworkEngine.m in Sources */,
 				511C588C18CD4D5E004125DA /* UXRFourSquareMenuModel.m in Sources */,
 				511C588F18CD4D5E004125DA /* UXRFourSquarePriceModel.m in Sources */,
 				511C588218CD4D5E004125DA /* UXRBaseModel.m in Sources */,
 				511C588818CD4D5E004125DA /* UXRFourSquareGeoCodeModel.m in Sources */,
+				511C58BC18CD50BD004125DA /* MKNetworkOperation.m in Sources */,
+				511C58B518CD50BD004125DA /* NSData+MKBase64.m in Sources */,
 				511C588118CD4D5E004125DA /* NSString+Utils.m in Sources */,
 				511C589618CD4D5E004125DA /* UXRJSONDeserializableObject.m in Sources */,
 				511C588918CD4D5E004125DA /* UXRFourSquareHoursModel.m in Sources */,
@@ -331,7 +416,9 @@
 				511C588418CD4D5E004125DA /* UXRFourSquareAttributesModel.m in Sources */,
 				511C588618CD4D5E004125DA /* UXRFourSquareContactModel.m in Sources */,
 				511C588018CD4D5E004125DA /* NSString+Location.m in Sources */,
+				511C58B918CD50BD004125DA /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
 				511C589418CD4D5E004125DA /* UXRFourSquareTipModel.m in Sources */,
+				511C58BA18CD50BD004125DA /* UIImageView+MKNetworkKitAdditions.m in Sources */,
 				511C588B18CD4D5E004125DA /* UXRFourSquareLocationModel.m in Sources */,
 				511C587F18CD4D5E004125DA /* NSDictionary+PList.m in Sources */,
 				511C588D18CD4D5E004125DA /* UXRFourSquareOpenTime.m in Sources */,
@@ -416,7 +503,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/FourSquareKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FourSquareKit/FourSquareKit-iOS-Prefix.pch";
+				GCC_PREFIX_HEADER = "FourSquareKit-iOS/FourSquareKit-iOS-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "FourSquareKit-iOS";
 				SKIP_INSTALL = YES;
@@ -428,7 +515,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/FourSquareKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FourSquareKit/FourSquareKit-iOS-Prefix.pch";
+				GCC_PREFIX_HEADER = "FourSquareKit-iOS/FourSquareKit-iOS-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "FourSquareKit-iOS";
 				SKIP_INSTALL = YES;

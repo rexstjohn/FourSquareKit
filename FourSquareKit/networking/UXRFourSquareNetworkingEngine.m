@@ -10,9 +10,9 @@
 #import "UXRFourSquarePhotoModel.h"
 #import "UXRFourSquareExploreResultsModel.h"
 #import "UXRExploreQueryBaseModel.h"
-#import "UXRGlobals.h"
 #import <CoreLocation/CoreLocation.h>
 
+// Static paths.
 static const NSString* FOURSQUARE_HOSTNAME = @"api.foursquare.com";
 static const NSString* FOURSQUARE_API = @"v2";
 static const NSString* FOURSQUARE_SEARCH_PATH = @"venues/search";
@@ -22,6 +22,11 @@ static const NSString* FOURSQUARE_VENUES_PATH = @"venues";
 static const NSString* FOURSQUARE_VENUE_PHOTOS_PATH = @"photos";
 static const NSInteger DEFAULT_RANGE_METERS = 800;
 static const NSString* DEFAULT_SECTION = @"food";
+
+// Static keys.
+static const NSString* FOURSQUARE_CLIENT_ID = @"XXX";
+static const NSString* FOURSQUARE_CLIENT_SECRET = @"XXX";
+static const NSString* FOURSQUARE_CALLBACK_URL = @"fmag://foursquare";
 
 @implementation UXRFourSquareNetworkingEngine
 
