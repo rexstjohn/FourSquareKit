@@ -62,7 +62,7 @@ USEAGE
                                           // Error.
                                       }];
 
-    // Download a FourSuqare Image using UXRBaseNetworkingEngine
+    // Download a FourSquare Image using UXRBaseNetworkingEngine
     UXRBaseNetworkingEngine * sharedEngine = [UXRBaseNetworkingEngine sharedInstance];
     self.networkOperation = [sharedEngine imageAtURL:fullPhotoUrl
                                    completionHandler:^(UIImage *fetchedImage, NSURL *fetchedURL, BOOL isInCache) {
