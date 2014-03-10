@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:FourSquareKit-Tests/FourSquareKit-Tests.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:iOS-Demo/Demo-iOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FourSquareKit-iOS/FourSquareKit-iOS.xcodeproj">
+   </FileRef>
+</Workspace>
