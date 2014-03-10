@@ -46,6 +46,8 @@
 		51ED5CAA18CE4CC7008E8ED4 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51ED5CA918CE4CC7008E8ED4 /* ImageIO.framework */; };
 		51ED5CAB18CE4D36008E8ED4 /* UXRFourSquareRestaurantModel+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4FA4D18CD64C70016675E /* UXRFourSquareRestaurantModel+Validations.m */; };
 		51ED5CAC18CE4D36008E8ED4 /* UXRFourSquarePhotoModel+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4FA5018CD65380016675E /* UXRFourSquarePhotoModel+Validation.m */; };
+		51ED5CAE18CE620B008E8ED4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51ED5CAD18CE620A008E8ED4 /* UIKit.framework */; };
+		51ED5CAF18CE6213008E8ED4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51ED5CAD18CE620A008E8ED4 /* UIKit.framework */; };
 		51F4F92018CD633E0016675E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4F91F18CD633E0016675E /* Foundation.framework */; };
 		51F4F92E18CD633F0016675E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4F92D18CD633F0016675E /* XCTest.framework */; };
 		51F4F92F18CD633F0016675E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4F91F18CD633E0016675E /* Foundation.framework */; };
@@ -144,6 +146,7 @@
 		51C1CE9318CD9C01009D685F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		51C1CE9718CE3F50009D685F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		51ED5CA918CE4CC7008E8ED4 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		51ED5CAD18CE620A008E8ED4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		51F4F91C18CD633E0016675E /* libFourSquareKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFourSquareKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F4F91F18CD633E0016675E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		51F4F92318CD633E0016675E /* FourSquareKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FourSquareKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -170,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51ED5CAF18CE6213008E8ED4 /* UIKit.framework in Frameworks */,
 				51C1CE9818CE3F50009D685F /* CFNetwork.framework in Frameworks */,
 				51C1CE9418CD9C01009D685F /* CoreGraphics.framework in Frameworks */,
 				51C1CE9218CD9BF9009D685F /* QuartzCore.framework in Frameworks */,
@@ -183,6 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51ED5CAE18CE620B008E8ED4 /* UIKit.framework in Frameworks */,
 				51ED5CAA18CE4CC7008E8ED4 /* ImageIO.framework in Frameworks */,
 				51ED5CA818CE4CC2008E8ED4 /* CFNetwork.framework in Frameworks */,
 				51F4FA5318CD65850016675E /* CoreLocation.framework in Frameworks */,
@@ -307,6 +312,7 @@
 		51F4F91E18CD633E0016675E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51ED5CAD18CE620A008E8ED4 /* UIKit.framework */,
 				51ED5CA918CE4CC7008E8ED4 /* ImageIO.framework */,
 				51C1CE9718CE3F50009D685F /* CFNetwork.framework */,
 				51C1CE9318CD9C01009D685F /* CoreGraphics.framework */,
