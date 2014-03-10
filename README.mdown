@@ -1,18 +1,82 @@
 INTRODUCTION
 
-I was working on a mobile application involving local search using both the FourSquare and Yelp APIs. After going through all the effort
-of breaking out and modeling the entire FourSquare API it occurred to me that it would be a good learning experience to open source the whole thing. 
+I noticed a lot of people having questions about connecting to the FourSquare API in iOS. I recently built an app using FourSquare
+and wanted to share my library for connect to and modeling FourSquare business queries.
 
 CONTENTS
 
-- Demo project
-- Library project with tests
+- Library project
+- Library w. Tests
+
+USEAGE
+
+1.) Register your instance of the UXRFourSquareNetworkingEngine:
+
+    NSString *yourClientId = @"";
+    NSString *yourClientSecret = @"";
+    NSString *yourCallbackURl = @""; //yourapp://foursquare
+    
+    [UXRFourSquareNetworkingEngine registerFourSquareEngineWithClientId:yourClientId andSecret:yourClientSecret andCallBackURL:yourCallbackURl];
+    self.fourSquareEngine = [UXRFourSquareNetworkingEngine sharedInstance];
+    
+2.) Start making calls!
+
+    // Get Nearby taco restaurants.
+    NSString *locationString = @"Seattle";
+    NSString *query = @"tacos";
+    [self.fourSquareEngine exploreRestaurantsNearLocation:locationString
+                                              withQuery:query
+                                    withCompletionBlock:^(NSArray *restaurants) {
+      UXRFourSquareRestaurantModel *restaurantModel = (UXRFourSquareRestaurantModel *)restaurants[0];
+    } failureBlock:^(NSError *error) {
+        // Error
+    }];
+  
+    // Fetch a "Full" Restaurant
+    [self.fourSquareEngine getRestaurantWithId:@"49efb3d1f964a520f7681fe3" withCompletionBlock:^(UXRFourSquareRestaurantModel *restaurant) {
+        // Do stuff
+    } failureBlock:^(NSError *error) {
+        // Error.
+    }];
+  
+    // Download a photo
+    [self.fourSquareEngine getPhotosForRestaurantWithId:@"4fc7c071e4b06e4ecff8e93d"
+                                    withCompletionBlock:^(NSArray *photos) {
+        UXRFourSquarePhotoModel *photoModel = (UXRFourSquarePhotoModel *)photos[0];
+        // Download the image to your image view 
+    } failureBlock:^(NSError *error) {
+        // Error.
+    }];
+    
+    // Get all businesses around your location
+    NSString *locationString = @"Seattle";
+    NSString *query = @"";
+    [self.fourSquareEngine exploreRestaurantsNearLocation:locationString
+                                                withQuery:query
+                                      withCompletionBlock:^(NSArray *restaurants) {
+                                          XCTAssert(restaurants.count != 0, @"Results should not be empty");
+                                          UXRFourSquareRestaurantModel *restaurantModel = (UXRFourSquareRestaurantModel *)restaurants[0];
+                                          // Do stuff.
+                                      } failureBlock:^(NSError *error) {
+                                          // Error.
+                                      }];
+
+INSTALLATION
+
+Get the dir and run "pod install" to install the MKNetworkKit dependency. 
+
+Library integration:
+
+Until I create a Cocoapod for the project you are going to have to add FourSquareKit as a sub-project to your app and manually
+copy over all the headers you need if you want to use the library and add it as a dependency in your build-phases. That is more
+of a pain then it should be...might be easier to just run the test project and borrow the bits and pieces you need for now.
 
 REQUIREMENTS
 
 - Cocoapods
 - CFNetwork.framework
 - ImageIO.framework
+- MKNetworkKit
 
 ROADMAP
 
