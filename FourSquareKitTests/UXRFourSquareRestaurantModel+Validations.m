@@ -11,7 +11,11 @@
 @implementation UXRFourSquareRestaurantModel (Validations)
 
 -(BOOL)isValid{
-    return NO;
+    BOOL isValid = YES;
+    isValid = self.name != nil;
+    isValid = self.url != nil;
+    isValid = self.restaurantId != nil;
+    return isValid;
 }
 
 @end

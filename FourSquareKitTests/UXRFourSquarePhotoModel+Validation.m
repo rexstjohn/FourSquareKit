@@ -11,7 +11,11 @@
 @implementation UXRFourSquarePhotoModel (Validation)
 
 -(BOOL)isValid{
-    return NO;
+    BOOL isValid = YES;
+    isValid = self.height != nil;
+    isValid = self.width != nil;
+    isValid = self.prefix != nil;
+    return isValid;
 }
 
 @end
