@@ -1,7 +1,6 @@
 INTRODUCTION
 
-This is my FourSquare iOS SDK which helps you instantly connect and start using all the major FourSquare API queries.
-There may be a few calls missing but this "kit" will run most major FourSquare API calls. You can also get photos.
+This is my FourSquare iOS SDK which helps you instantly connect and start using most major FourSquare API queries.
 
 CONTENTS
 
