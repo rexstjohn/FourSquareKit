@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		51C1CE9018CD9B59009D685F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C1CE8F18CD9B59009D685F /* QuartzCore.framework */; };
+		51C1CE9618CE3E35009D685F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C1CE9518CE3E35009D685F /* CFNetwork.framework */; };
+		51C1CE9A18CE40B6009D685F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C1CE9918CE40B6009D685F /* ImageIO.framework */; };
 		51E08BB418CD91720076C97E /* libFourSquareKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E08BAF18CD91580076C97E /* libFourSquareKit.a */; };
 		51F4FA1318CD640C0016675E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4FA1218CD640C0016675E /* Foundation.framework */; };
 		51F4FA1518CD640C0016675E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4FA1418CD640C0016675E /* CoreGraphics.framework */; };
@@ -80,6 +82,8 @@
 		51C1CE8C18CD99E5009D685F /* UXRBaseNetworkingEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UXRBaseNetworkingEngine.h; path = FourSquareKit/networking/UXRBaseNetworkingEngine.h; sourceTree = "<group>"; };
 		51C1CE8E18CD99E9009D685F /* UXRImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UXRImageView.h; path = FourSquareKit/UXRImageView.h; sourceTree = "<group>"; };
 		51C1CE8F18CD9B59009D685F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		51C1CE9518CE3E35009D685F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		51C1CE9918CE40B6009D685F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		51E08BA918CD91580076C97E /* FourSquareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = FourSquareKit.xcodeproj; sourceTree = "<group>"; };
 		51F4FA0F18CD640C0016675E /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F4FA1218CD640C0016675E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,6 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C1CE9A18CE40B6009D685F /* ImageIO.framework in Frameworks */,
+				51C1CE9618CE3E35009D685F /* CFNetwork.framework in Frameworks */,
 				51C1CE9018CD9B59009D685F /* QuartzCore.framework in Frameworks */,
 				51E08BB418CD91720076C97E /* libFourSquareKit.a in Frameworks */,
 				51F4FA1518CD640C0016675E /* CoreGraphics.framework in Frameworks */,
@@ -186,6 +192,8 @@
 		51F4FA1118CD640C0016675E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51C1CE9918CE40B6009D685F /* ImageIO.framework */,
+				51C1CE9518CE3E35009D685F /* CFNetwork.framework */,
 				51C1CE8F18CD9B59009D685F /* QuartzCore.framework */,
 				51E08BA918CD91580076C97E /* FourSquareKit.xcodeproj */,
 				51C1CE5F18CD9376009D685F /* FourSquareKit */,
@@ -478,6 +486,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
 				"OTHER_LDFLAGS[arch=*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,6 +509,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
