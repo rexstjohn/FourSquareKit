@@ -1,0 +1,1 @@
+PODS_FOURSQUAREKIT_REACHABILITY_OTHER_LDFLAGS = -framework SystemConfiguration
