@@ -222,7 +222,7 @@ static const NSString* DEFAULT_SECTION = @"food";
                                               params:[self dictionaryWithAuthFromDictionary:postParams ]
                                           httpMethod:@"GET"
                                                  ssl:YES];
-    [op setShouldNotCacheResponse:YES];
+    //[op setShouldNotCacheResponse:YES];
     [op addCompletionHandler:^(MKNetworkOperation *completedOperation) {
         
         NSError* error = nil;
@@ -272,7 +272,7 @@ static const NSString* DEFAULT_SECTION = @"food";
                                               params:[self dictionaryWithAuthFromDictionary:postParams ]
                                           httpMethod:@"GET"
                                                  ssl:YES];
-    [op setShouldNotCacheResponse:YES];
+    //[op setShouldNotCacheResponse:YES];
     [op addCompletionHandler:^(MKNetworkOperation *completedOperation) {
         
         NSError* error = nil;
