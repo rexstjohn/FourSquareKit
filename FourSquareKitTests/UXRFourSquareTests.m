@@ -26,7 +26,11 @@
     [super setUp];
     
 #warning YOU MUST INPUT YOUR DETAILS HERE IN ORDER TO RUN THESE TESTS!!!!!
-    [UXRFourSquareNetworkingEngine registerFourSquareEngineWithClientId:@"HEVJV3XI5AKUIEGRBRQU4QJKUZ1RDICBTDHCJBLEGGQKBPTC" andSecret:@"VW2QADVZN5YCMGUDEJ5R1H1GSVP2YBZV1DKVSMWKR1FTMFTZ" andCallBackURL:@"fmag://foursquare"];
+    NSString *yourClientId = @"";
+    NSString *yourClientSecret = @"";
+    NSString *yourCallbackURl = @""; //yourapp://foursquare
+    
+    [UXRFourSquareNetworkingEngine registerFourSquareEngineWithClientId:yourClientId andSecret:yourClientSecret andCallBackURL:yourCallbackURl];
     self.fourSquareEngine = [UXRFourSquareNetworkingEngine sharedInstance];
 }
 

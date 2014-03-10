@@ -58,6 +58,17 @@ static const NSString* DEFAULT_SECTION = @"food";
 +(void)registerFourSquareEngineWithClientId:(NSString*)client
                                   andSecret:(NSString*)secret
                              andCallBackURL:(NSString*)callback{
+    // Some basic validation.
+    if(client.length < 48 || [client isEqualToString:@""] == YES){
+        [NSException raise:@"Invalid FourSquare Client Id" format:@""];
+    }
+    if(secret.length < 48 || [secret isEqualToString:@""] == YES){
+        [NSException raise:@"Invalid FourSquare secret" format:@""];
+    }
+    if([callback isEqualToString:@""] == YES){
+        [NSException raise:@"Invalid FourSquare secret" format:@""];
+    }
+    
     UXRFourSquareNetworkingEngine *instance = UXRFourSquareNetworkingEngine.sharedInstance;
     instance.clientSecret = secret;
     instance.clientId = client;
@@ -108,6 +119,7 @@ static const NSString* DEFAULT_SECTION = @"food";
 - (void)getRestaurantsWithCompletionBlock:(UXRFourSquareEngineRestaurantsCompletionBlock)completionBlock
                              failureBlock:(UXRFourSquareEngineErrorBlock)errorBlock
 {
+    [self checkRegistration];
     // Fill the post body with the tweet
     NSMutableDictionary *postParams = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                        @"restaurants", @"query",
@@ -144,6 +156,7 @@ static const NSString* DEFAULT_SECTION = @"food";
 - (void)getRestaurantsNearLocation:(CLLocation*)location
                withCompletionBlock:(UXRFourSquareEngineRestaurantsCompletionBlock)completionBlock
                       failureBlock:(UXRFourSquareEngineErrorBlock)errorBlock{
+    [self checkRegistration];
     
     CLLocationCoordinate2D coordinate = location.coordinate;
     NSString *latLonString = [NSString stringWithFormat:@"%f,%f",coordinate.latitude,coordinate.longitude];
@@ -187,7 +200,8 @@ static const NSString* DEFAULT_SECTION = @"food";
 - (void)exploreRestaurantsNearLocation:(NSString*)location
                          withQuery:(NSString*)query
                withCompletionBlock:(UXRFourSquareEngineRestaurantsCompletionBlock)completionBlock
-                      failureBlock:(UXRFourSquareEngineErrorBlock)errorBlock{
+                          failureBlock:(UXRFourSquareEngineErrorBlock)errorBlock{
+    [self checkRegistration];
     
     NSNumber *rangeMeters = [NSNumber numberWithInt:DEFAULT_RANGE_METERS];
     // Section needs to be nil or it will override any incoming query.
@@ -235,6 +249,7 @@ static const NSString* DEFAULT_SECTION = @"food";
                             withQuery:(NSString*)query
                   withCompletionBlock:(UXRFourSquareEngineRestaurantsCompletionBlock)completionBlock
                          failureBlock:(UXRFourSquareEngineErrorBlock)errorBlock{
+    [self checkRegistration];
     
     NSNumber *rangeMeters = [NSNumber numberWithInt:DEFAULT_RANGE_METERS];
     NSString *latLonString = [NSString stringWithFormat:@"%f,%f", coordinate.latitude, coordinate.longitude];
@@ -282,6 +297,7 @@ static const NSString* DEFAULT_SECTION = @"food";
 - (void)getRestaurantWithId:(NSString*)restaurantId
         withCompletionBlock:(UXRFourSquareEngineRestaurantCompletionBlock)completionBlock
                failureBlock:(UXRFourSquareEngineErrorBlock)errorBlock{
+    [self checkRegistration];
     
     // Fill the post body with the tweet
     NSString *venuePath = [NSString stringWithFormat:@"%@/%@",[FOURSQUARE_VENUES_PATH copy],restaurantId];
@@ -316,7 +332,7 @@ static const NSString* DEFAULT_SECTION = @"food";
 - (void)getPhotosForRestaurantWithId:(NSString*)restaurantId
                  withCompletionBlock:(UXRFourSquareEnginePhotosCompletionBlock)completionBlock
                         failureBlock:(UXRFourSquareEngineErrorBlock)errorBlock{
-    
+    [self checkRegistration];
     // Fill the post body with the tweet
     NSString *venuePath = [NSString stringWithFormat:@"%@/%@/%@",[FOURSQUARE_VENUES_PATH copy],restaurantId, [FOURSQUARE_VENUE_PHOTOS_PATH copy]];
     
@@ -345,5 +361,17 @@ static const NSString* DEFAULT_SECTION = @"food";
     }];
     
     [self enqueueOperation:op];
+}
+
+#pragma mark - Verify registration status
+
+-(void)checkRegistration{
+    BOOL isRegistered = NO;
+    isRegistered = self.clientId != nil;
+    isRegistered = self.clientSecret != nil;
+    isRegistered = self.callBackURL != nil;
+    if(isRegistered == NO){
+        [NSException raise:@"FourSquare Client Not Registered, use registerFourSquareEngineWithClientId" format:@""];
+    }
 }
 @end
