@@ -1,7 +1,7 @@
 INTRODUCTION
 
-I noticed a lot of people having questions about connecting to the FourSquare API in iOS. I recently built an app using FourSquare
-and wanted to share my library for connect to and modeling FourSquare business queries.
+This is my FourSquare iOS SDK which helps you instantly connect and start using all the major FourSquare API queries.
+There may be a few calls missing but this "kit" will run most major FourSquare API calls. You can also get photos.
 
 CONTENTS
 
@@ -44,6 +44,8 @@ USEAGE
                                     withCompletionBlock:^(NSArray *photos) {
         UXRFourSquarePhotoModel *photoModel = (UXRFourSquarePhotoModel *)photos[0];
         // Download the image to your image view 
+        NSURL *fullPhotoURL = [photoModel fullPhotoURL];
+        // Use this URL to fetch the photo however you like to do that...
     } failureBlock:^(NSError *error) {
         // Error.
     }];
@@ -54,13 +56,30 @@ USEAGE
     [self.fourSquareEngine exploreRestaurantsNearLocation:locationString
                                                 withQuery:query
                                       withCompletionBlock:^(NSArray *restaurants) {
-                                          XCTAssert(restaurants.count != 0, @"Results should not be empty");
                                           UXRFourSquareRestaurantModel *restaurantModel = (UXRFourSquareRestaurantModel *)restaurants[0];
                                           // Do stuff.
                                       } failureBlock:^(NSError *error) {
                                           // Error.
                                       }];
 
+    // Download a FourSuqare Image using UXRBaseNetworkingEngine
+    UXRBaseNetworkingEngine * sharedEngine = [UXRBaseNetworkingEngine sharedInstance];
+    self.networkOperation = [sharedEngine imageAtURL:fullPhotoUrl
+                                   completionHandler:^(UIImage *fetchedImage, NSURL *fetchedURL, BOOL isInCache) {
+        if(url == fetchedURL){
+             yourImageView.image = fetchedImage;
+            [yourImageView setNeedsDisplay];
+            
+            if(completion != nil){
+                completion(fetchedImage);
+            }
+        }
+    } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
+        if(error != nil){
+            errorBlock(error);
+        }
+    }];
+    
 INSTALLATION
 
 Get the dir and run "pod install" to install the MKNetworkKit dependency. 
