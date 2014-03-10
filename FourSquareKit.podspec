@@ -28,7 +28,7 @@ THE SOFTWARE.' }
   s.author           = { "Rex St John" => "rexstjohn@ux-rx.com" }
   s.source           = { 
                           :git => 'https://github.com/rexstjohn/FourSquareKit.git',
-                          :commit => '7a908dd68936505979979728a2bdb54031385058'
+                          :commit => 'cb2e4775192f429e31703fa962a68ee1c36a9f2a'
                        }
   s.social_media_url = 'https://twitter.com/rexstjohn'
 
