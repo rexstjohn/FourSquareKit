@@ -27,8 +27,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.' }
   s.author           = { "Rex St John" => "rexstjohn@ux-rx.com" }
   s.source           = { 
-                          :git => 'https://github.com/rexstjohn/FourSquareKit.git',
-                          :commit => 'cb2e4775192f429e31703fa962a68ee1c36a9f2a'
+                          :git => 'https://github.com/rexstjohn/FourSquareKit.git',:tag => 'v0.0.3'
                        }
   s.social_media_url = 'https://twitter.com/rexstjohn'
 
