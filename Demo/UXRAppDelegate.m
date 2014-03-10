@@ -7,14 +7,14 @@
 //
 
 #import "UXRAppDelegate.h"
-#import "FourSquareKit/FourSquareKit.h"
+#import <FourSquareKit/FourSquarekit.h>
 
 @implementation UXRAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     UXRBaseModel *base = [[UXRBaseModel alloc] init];
-    
+    [base description];
     return YES;
 }
 

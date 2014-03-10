@@ -12,7 +12,7 @@
 // Models
 #import "UXRBaseModel.h"
 #import "UXRExploreQueryBaseModel.h"
-#import "USRFourSquareAttributesModel.h"
+#import "UXRFourSquareAttributesModel.h"
 #import "UXRFourSquareCategoryModel.h"
 #import "UXRFourSquareContactModel.h"
 #import "UXRFourSquareExploreResultsModel.h"

@@ -10,7 +10,37 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>079437A033044E188BCDB9C3</key>
+		<key>0DD0770512F6498C82ABABC1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>22EF7232553A4E77A441D515</key>
 		<dict>
 			<key>explicitFileType</key>
 			<string>archive.ar</string>
@@ -22,30 +52,6 @@
 			<string>libPods-FourSquareKit.a</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>209277337FDB4FE1B3D1F3EE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-FourSquareKit-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
 		</dict>
 		<key>5171475918CD7C1000BBA5C8</key>
 		<dict>
@@ -1246,7 +1252,6 @@
 				<string>51F4F93518CD633F0016675E</string>
 				<string>51F4F91E18CD633E0016675E</string>
 				<string>51F4F91D18CD633E0016675E</string>
-				<string>A194427F30E04ED6B76DA9BA</string>
 				<string>AD1002F4479F4B12B75A7D61</string>
 			</array>
 			<key>isa</key>
@@ -1353,8 +1358,7 @@
 			<key>files</key>
 			<array>
 				<string>51F4F92018CD633E0016675E</string>
-				<string>E6A47FBC53564D5393097C17</string>
-				<string>D07CFE6C05CF4AF18CF634ED</string>
+				<string>5D766DFF9EAE4E4DA5103694</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -1384,11 +1388,11 @@
 			<string>51F4F93F18CD633F0016675E</string>
 			<key>buildPhases</key>
 			<array>
-				<string>95D1D303B17F485B8E306235</string>
+				<string>0DD0770512F6498C82ABABC1</string>
 				<string>51F4F91818CD633E0016675E</string>
 				<string>51F4F91918CD633E0016675E</string>
 				<string>51F4F91A18CD633E0016675E</string>
-				<string>209277337FDB4FE1B3D1F3EE</string>
+				<string>FF53DDE14EE647A485C06A26</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -1440,8 +1444,7 @@
 				<string>51F4F91F18CD633E0016675E</string>
 				<string>51F4F92D18CD633F0016675E</string>
 				<string>51F4F93018CD633F0016675E</string>
-				<string>6CDA13ED5B2549AC8A18C9AA</string>
-				<string>079437A033044E188BCDB9C3</string>
+				<string>22EF7232553A4E77A441D515</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -1935,11 +1938,11 @@
 				<key>GCC_PREFIX_HEADER</key>
 				<string>FourSquareKit/FourSquareKit-Prefix.pch</string>
 				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
+				<string></string>
 				<key>PRODUCT_NAME</key>
 				<string>$(TARGET_NAME)</string>
 				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
+				<string>include/$(PRODUCT_NAME)</string>
 				<key>SKIP_INSTALL</key>
 				<string>YES</string>
 			</dict>
@@ -1961,11 +1964,11 @@
 				<key>GCC_PREFIX_HEADER</key>
 				<string>FourSquareKit/FourSquareKit-Prefix.pch</string>
 				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
+				<string></string>
 				<key>PRODUCT_NAME</key>
 				<string>$(TARGET_NAME)</string>
 				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
+				<string>include/$(PRODUCT_NAME)</string>
 				<key>SKIP_INSTALL</key>
 				<string>YES</string>
 			</dict>
@@ -2217,63 +2220,12 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>6CDA13ED5B2549AC8A18C9AA</key>
+		<key>5D766DFF9EAE4E4DA5103694</key>
 		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
+			<key>fileRef</key>
+			<string>22EF7232553A4E77A441D515</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>95D1D303B17F485B8E306235</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>A194427F30E04ED6B76DA9BA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>AD1002F4479F4B12B75A7D61</key>
 		<dict>
@@ -2290,19 +2242,29 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D07CFE6C05CF4AF18CF634ED</key>
+		<key>FF53DDE14EE647A485C06A26</key>
 		<dict>
-			<key>fileRef</key>
-			<string>079437A033044E188BCDB9C3</string>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E6A47FBC53564D5393097C17</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6CDA13ED5B2549AC8A18C9AA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-FourSquareKit-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>
