@@ -1,0 +1,3 @@
+link_with ['FourSquareKit']
+platform :ios
+pod 'FourSquareKit', :git => 'https://github.com/rexstjohn/FourSquareKit', :tag => 'v0.0.4'
