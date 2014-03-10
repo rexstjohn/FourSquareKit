@@ -36,7 +36,7 @@ THE SOFTWARE.' }
   s.platform = :ios, '7.0'
   s.ios.deployment_target = '7.0'
   s.requires_arc = true
-  s.source_files = 'Classes/ios/*.{h,m}'
+  s.source_files = 'FourSquareKit/**/*.{h,m}','FourSquareKit/**/networking/*.{h,m}','FourSquareKit/**/categories/*.{h,m}','FourSquareKit/**/models/*.{h,m}'
   s.resources = 'Resources'
   s.ios.exclude_files = 'Classes/osx'
   s.public_header_files = 'Classes/**/*.h'

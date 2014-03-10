@@ -1,4 +1,4 @@
-//
+ //
 //  FourSquareKit.h
 //  FourSquareKit
 //
@@ -40,6 +40,3 @@
 #import "NSDictionary+PList.h"
 #import "NSString+Location.h"
 #import "NSString+Utils.h"
-
-// Views.
-#import "UXRImageView.h"

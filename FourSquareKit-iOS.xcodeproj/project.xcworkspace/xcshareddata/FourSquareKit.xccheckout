@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>8F1ACE7F-7151-471C-835B-8CEC284990AB</string>
+	<string>69007931-6F35-4C4B-98B6-C7157515B44A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>FourSquareKit</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>ssh://github.com/rexstjohn/FourSquareKit.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>FourSquareKit.xcworkspace</string>
+	<string>FourSquareKit.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C450C4D3-0A73-4BFD-B232-1DE46B468C09</key>
-		<string>..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/rexstjohn/FourSquareKit.git</string>
