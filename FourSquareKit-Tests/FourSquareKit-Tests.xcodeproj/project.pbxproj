@@ -22,7 +22,7 @@
 		5186580A18CD492500E8F486 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5186581218CD492500E8F486 /* FourSquareKit-TestsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FourSquareKit-TestsTests-Info.plist"; sourceTree = "<group>"; };
 		5186581418CD492500E8F486 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5186581618CD492500E8F486 /* FourSquareKit_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourSquareKit_Tests.m; sourceTree = "<group>"; };
+		5186581618CD492500E8F486 /* FourSquareKit_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FourSquareKit_Tests.m; path = "../FourSquareKit-Tests/FourSquareKit_Tests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +84,7 @@
 				5186581318CD492500E8F486 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			path = "../FourSquareKit-Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

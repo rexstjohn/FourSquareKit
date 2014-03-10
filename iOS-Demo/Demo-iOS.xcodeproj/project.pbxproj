@@ -29,9 +29,6 @@
 		5186578018CD47D300E8F486 /* UXRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UXRAppDelegate.m; sourceTree = "<group>"; };
 		5186578218CD47D300E8F486 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5186578918CD47D300E8F486 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		5186579118CD47D300E8F486 /* Demo-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo-iOSTests-Info.plist"; sourceTree = "<group>"; };
-		5186579318CD47D300E8F486 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5186579518CD47D300E8F486 /* Demo_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_iOSTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				5186577618CD47D300E8F486 /* Demo-iOS */,
-				5186578F18CD47D300E8F486 /* Demo-iOSTests */,
 				5186576F18CD47D300E8F486 /* Frameworks */,
 				5186576E18CD47D300E8F486 /* Products */,
 			);
@@ -95,24 +91,6 @@
 				5186577918CD47D300E8F486 /* InfoPlist.strings */,
 				5186577C18CD47D300E8F486 /* main.m */,
 				5186577E18CD47D300E8F486 /* Demo-iOS-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5186578F18CD47D300E8F486 /* Demo-iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				5186579518CD47D300E8F486 /* Demo_iOSTests.m */,
-				5186579018CD47D300E8F486 /* Supporting Files */,
-			);
-			path = "Demo-iOSTests";
-			sourceTree = "<group>";
-		};
-		5186579018CD47D300E8F486 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5186579118CD47D300E8F486 /* Demo-iOSTests-Info.plist */,
-				5186579218CD47D300E8F486 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -193,14 +171,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				5186577A18CD47D300E8F486 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		5186579218CD47D300E8F486 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5186579318CD47D300E8F486 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
