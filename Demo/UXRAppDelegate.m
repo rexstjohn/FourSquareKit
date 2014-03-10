@@ -13,8 +13,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    UXRBaseModel *base = [[UXRBaseModel alloc] init];
-    [base description];
+    [UXRFourSquareNetworkingEngine registerFourSquareEngineWithClientId:@"HEVJV3XI5AKUIEGRBRQU4QJKUZ1RDICBTDHCJBLEGGQKBPTC" andSecret:@"VW2QADVZN5YCMGUDEJ5R1H1GSVP2YBZV1DKVSMWKR1FTMFTZ" andCallBackURL:@"fmag://foursquare"];
+    
     return YES;
 }
 

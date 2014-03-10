@@ -8,6 +8,7 @@
 
 // Engines
 #import "UXRFourSquareNetworkingEngine.h"
+#import "UXRBaseNetworkingEngine.h"
 
 // Models
 #import "UXRBaseModel.h"
@@ -34,9 +35,11 @@
 #import "UXRJSONSerializableObject.h"
 
 // Categories.
-
 #import "CLLocation+isEmpty.h"
 #import "CLLocation+Testing.h"
 #import "NSDictionary+PList.h"
 #import "NSString+Location.h"
 #import "NSString+Utils.h"
+
+// Views.
+#import "UXRImageView.h"

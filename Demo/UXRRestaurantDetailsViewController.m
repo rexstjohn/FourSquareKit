@@ -9,7 +9,8 @@
 #import "UXRRestaurantDetailsViewController.h"
 
 @interface UXRRestaurantDetailsViewController ()
-
+@property(nonatomic,strong) UXRFourSquareNetworkingEngine *fourSquareEngine;
+@property(nonatomic,strong) UXRFourSquareRestaurantModel *restaurantModel;
 @end
 
 @implementation UXRRestaurantDetailsViewController
@@ -27,6 +28,30 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.fourSquareEngine = [UXRFourSquareNetworkingEngine sharedInstance];
+    
+    // Get a restaurant.
+    NSString *exampleRestaurant = @"49efb3d1f964a520f7681fe3";
+    __weak UXRRestaurantDetailsViewController *weakSelf = self;
+    [self.fourSquareEngine getRestaurantWithId:exampleRestaurant
+                           withCompletionBlock:^(UXRFourSquareRestaurantModel *restaurant) {
+                               weakSelf.restaurantName.text = restaurant.name;
+                               weakSelf.restaurantModel = restaurant;
+                               UXRFourSquarePhotoModel *photo = [restaurant.photos objectAtIndex:0];
+                               [weakSelf getRestaurantPhoto:photo];
+    } failureBlock:^(NSError *error) {
+    }];
+    
+}
+
+- (void) getRestaurantPhoto:(UXRFourSquarePhotoModel*)photo{
+//    __weak UXRImageView *weakImage = self.imageView;
+//    [self.imageView downloadImageFromUrl:[photo fullPhotoURL]
+//     withCompletionBlock:^(UIImage *resultingImage) {
+//         [weakImage setImage:resultingImage];
+//     } andError:^(NSError *error) {
+//        // Failz
+//     }];
 }
 
 - (void)didReceiveMemoryWarning

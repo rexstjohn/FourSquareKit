@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FourSquareKit/FourSquarekit.h>
 
 @interface UXRRestaurantDetailsViewController : UIViewController
 @property(nonatomic,strong) IBOutlet UILabel *restaurantName;
-@property(nonatomic,strong) IBOutlet UIImageView *imageView;
+@property(nonatomic,strong) IBOutlet UXRImageView *imageView;
 @end

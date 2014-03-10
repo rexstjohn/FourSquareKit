@@ -24,6 +24,9 @@ static const NSInteger DEFAULT_RANGE_METERS = 800;
 static const NSString* DEFAULT_SECTION = @"food";
 
 @interface UXRFourSquareNetworkingEngine()
+@property(nonatomic,strong,readwrite) NSString *clientId;
+@property(nonatomic,strong,readwrite) NSString *clientSecret;
+@property(nonatomic,strong,readwrite) NSString *callBackURL;
 @end
 
 @implementation UXRFourSquareNetworkingEngine
