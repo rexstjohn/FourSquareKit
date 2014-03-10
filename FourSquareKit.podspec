@@ -33,12 +33,9 @@ THE SOFTWARE.' }
   s.social_media_url = 'https://twitter.com/rexstjohn'
 
   s.dependency 'MKNetworkKit', '~> 0.87'
-  s.platform = :ios, '7.0'
-  s.ios.deployment_target = '7.0'
   s.requires_arc = true
   s.source_files = 'FourSquareKit/**/*.{h,m}','FourSquareKit/**/networking/*.{h,m}','FourSquareKit/**/categories/*.{h,m}','FourSquareKit/**/models/*.{h,m}'
-  s.ios.exclude_files = 'Classes/osx'
   s.public_header_files = 'Classes/**/*.h'
   s.prefix_header_contents = '#import "FourSquareKit.h"'
-  s.frameworks = 'CFNetwork', 'ImageIO', 'CoreLocation', 'UIKit'
+  s.ios.frameworks = 'CFNetwork', 'ImageIO', 'CoreLocation', 'UIKit'
 end
