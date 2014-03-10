@@ -44,6 +44,8 @@
 		51ED5CA718CE4C9B008E8ED4 /* UXRFourSquareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4FA4518CD64530016675E /* UXRFourSquareTests.m */; };
 		51ED5CA818CE4CC2008E8ED4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C1CE9718CE3F50009D685F /* CFNetwork.framework */; };
 		51ED5CAA18CE4CC7008E8ED4 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51ED5CA918CE4CC7008E8ED4 /* ImageIO.framework */; };
+		51ED5CAB18CE4D36008E8ED4 /* UXRFourSquareRestaurantModel+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4FA4D18CD64C70016675E /* UXRFourSquareRestaurantModel+Validations.m */; };
+		51ED5CAC18CE4D36008E8ED4 /* UXRFourSquarePhotoModel+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4FA5018CD65380016675E /* UXRFourSquarePhotoModel+Validation.m */; };
 		51F4F92018CD633E0016675E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4F91F18CD633E0016675E /* Foundation.framework */; };
 		51F4F92E18CD633F0016675E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4F92D18CD633F0016675E /* XCTest.framework */; };
 		51F4F92F18CD633F0016675E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4F91F18CD633E0016675E /* Foundation.framework */; };
@@ -523,7 +525,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51ED5CAB18CE4D36008E8ED4 /* UXRFourSquareRestaurantModel+Validations.m in Sources */,
 				51ED5CA718CE4C9B008E8ED4 /* UXRFourSquareTests.m in Sources */,
+				51ED5CAC18CE4D36008E8ED4 /* UXRFourSquarePhotoModel+Validation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
