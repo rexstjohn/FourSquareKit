@@ -1,1 +1,22 @@
-Coming soon...
+INTRODUCTION
+
+I was working on a mobile application involving local search using both the FourSquare and Yelp APIs. After going through all the effort
+of breaking out and modeling the entire FourSquare API it occurred to me that it would be a good learning experience to open source the whole thing. 
+
+CONTENTS
+
+- Demo project
+- Library project with tests
+
+REQUIREMENTS
+
+- Cocoapods
+- CFNetwork.framework
+- ImageIO.framework
+
+ROADMAP
+
+- Need to create a cocoapod
+- Need to add more missing calls
+- Need to model more response objects
+- Need to write more docs
