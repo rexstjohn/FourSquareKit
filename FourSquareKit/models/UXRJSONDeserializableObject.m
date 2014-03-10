@@ -174,10 +174,5 @@ static NSDateFormatter *longZuluDateReFormatter = nil;
     return dateString;
 }
 
--(BOOL)isModelValid{
-    [NSException exceptionWithName:NSInternalInconsistencyException reason:@"OVERRIDE TO PROVIDE IMPLEMENTATION" userInfo:nil];
-    return YES;
-}
-
 @end
 
