@@ -7,77 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34B542D8C20A48B5954C7EBE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6600C7DF83B0458B953CCE58 /* libPods.a */; };
 		5171479318CD7C1000BBA5C8 /* CLLocation+isEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171475B18CD7C1000BBA5C8 /* CLLocation+isEmpty.m */; };
-		5171479418CD7C1000BBA5C8 /* CLLocation+isEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171475B18CD7C1000BBA5C8 /* CLLocation+isEmpty.m */; };
 		5171479518CD7C1000BBA5C8 /* CLLocation+Testing.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171475D18CD7C1000BBA5C8 /* CLLocation+Testing.m */; };
-		5171479618CD7C1000BBA5C8 /* CLLocation+Testing.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171475D18CD7C1000BBA5C8 /* CLLocation+Testing.m */; };
 		5171479718CD7C1000BBA5C8 /* NSDictionary+PList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171475F18CD7C1000BBA5C8 /* NSDictionary+PList.m */; };
-		5171479818CD7C1000BBA5C8 /* NSDictionary+PList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171475F18CD7C1000BBA5C8 /* NSDictionary+PList.m */; };
 		5171479918CD7C1000BBA5C8 /* NSString+Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171476118CD7C1000BBA5C8 /* NSString+Location.m */; };
-		5171479A18CD7C1000BBA5C8 /* NSString+Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171476118CD7C1000BBA5C8 /* NSString+Location.m */; };
 		5171479B18CD7C1000BBA5C8 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171476318CD7C1000BBA5C8 /* NSString+Utils.m */; };
-		5171479C18CD7C1000BBA5C8 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171476318CD7C1000BBA5C8 /* NSString+Utils.m */; };
 		5171479D18CD7C1000BBA5C8 /* UXRBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171476618CD7C1000BBA5C8 /* UXRBaseModel.m */; };
-		5171479E18CD7C1000BBA5C8 /* UXRBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171476618CD7C1000BBA5C8 /* UXRBaseModel.m */; };
 		5171479F18CD7C1000BBA5C8 /* UXRExploreQueryBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171476818CD7C1000BBA5C8 /* UXRExploreQueryBaseModel.m */; };
-		517147A018CD7C1000BBA5C8 /* UXRExploreQueryBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171476818CD7C1000BBA5C8 /* UXRExploreQueryBaseModel.m */; };
 		517147A118CD7C1000BBA5C8 /* UXRFourSquareAttributesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171476A18CD7C1000BBA5C8 /* UXRFourSquareAttributesModel.m */; };
-		517147A218CD7C1000BBA5C8 /* UXRFourSquareAttributesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171476A18CD7C1000BBA5C8 /* UXRFourSquareAttributesModel.m */; };
 		517147A318CD7C1000BBA5C8 /* UXRFourSquareCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171476C18CD7C1000BBA5C8 /* UXRFourSquareCategoryModel.m */; };
-		517147A418CD7C1000BBA5C8 /* UXRFourSquareCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171476C18CD7C1000BBA5C8 /* UXRFourSquareCategoryModel.m */; };
 		517147A518CD7C1000BBA5C8 /* UXRFourSquareContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171476E18CD7C1000BBA5C8 /* UXRFourSquareContactModel.m */; };
-		517147A618CD7C1000BBA5C8 /* UXRFourSquareContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171476E18CD7C1000BBA5C8 /* UXRFourSquareContactModel.m */; };
 		517147A718CD7C1000BBA5C8 /* UXRFourSquareExploreResultsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171477018CD7C1000BBA5C8 /* UXRFourSquareExploreResultsModel.m */; };
-		517147A818CD7C1000BBA5C8 /* UXRFourSquareExploreResultsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171477018CD7C1000BBA5C8 /* UXRFourSquareExploreResultsModel.m */; };
 		517147A918CD7C1000BBA5C8 /* UXRFourSquareGeoCodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171477218CD7C1000BBA5C8 /* UXRFourSquareGeoCodeModel.m */; };
-		517147AA18CD7C1000BBA5C8 /* UXRFourSquareGeoCodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171477218CD7C1000BBA5C8 /* UXRFourSquareGeoCodeModel.m */; };
 		517147AB18CD7C1000BBA5C8 /* UXRFourSquareHoursModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171477418CD7C1000BBA5C8 /* UXRFourSquareHoursModel.m */; };
-		517147AC18CD7C1000BBA5C8 /* UXRFourSquareHoursModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171477418CD7C1000BBA5C8 /* UXRFourSquareHoursModel.m */; };
 		517147AD18CD7C1000BBA5C8 /* UXRFourSquareLikesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171477618CD7C1000BBA5C8 /* UXRFourSquareLikesModel.m */; };
-		517147AE18CD7C1000BBA5C8 /* UXRFourSquareLikesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171477618CD7C1000BBA5C8 /* UXRFourSquareLikesModel.m */; };
 		517147AF18CD7C1000BBA5C8 /* UXRFourSquareLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171477818CD7C1000BBA5C8 /* UXRFourSquareLocationModel.m */; };
-		517147B018CD7C1000BBA5C8 /* UXRFourSquareLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171477818CD7C1000BBA5C8 /* UXRFourSquareLocationModel.m */; };
 		517147B118CD7C1000BBA5C8 /* UXRFourSquareMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171477A18CD7C1000BBA5C8 /* UXRFourSquareMenuModel.m */; };
-		517147B218CD7C1000BBA5C8 /* UXRFourSquareMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171477A18CD7C1000BBA5C8 /* UXRFourSquareMenuModel.m */; };
 		517147B318CD7C1000BBA5C8 /* UXRFourSquareOpenTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171477C18CD7C1000BBA5C8 /* UXRFourSquareOpenTime.m */; };
-		517147B418CD7C1000BBA5C8 /* UXRFourSquareOpenTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171477C18CD7C1000BBA5C8 /* UXRFourSquareOpenTime.m */; };
 		517147B518CD7C1000BBA5C8 /* UXRFourSquarePhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171477E18CD7C1000BBA5C8 /* UXRFourSquarePhotoModel.m */; };
-		517147B618CD7C1000BBA5C8 /* UXRFourSquarePhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171477E18CD7C1000BBA5C8 /* UXRFourSquarePhotoModel.m */; };
 		517147B718CD7C1000BBA5C8 /* UXRFourSquarePriceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171478018CD7C1000BBA5C8 /* UXRFourSquarePriceModel.m */; };
-		517147B818CD7C1000BBA5C8 /* UXRFourSquarePriceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171478018CD7C1000BBA5C8 /* UXRFourSquarePriceModel.m */; };
 		517147B918CD7C1000BBA5C8 /* UXRFourSquareReservationsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171478218CD7C1000BBA5C8 /* UXRFourSquareReservationsModel.m */; };
-		517147BA18CD7C1000BBA5C8 /* UXRFourSquareReservationsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171478218CD7C1000BBA5C8 /* UXRFourSquareReservationsModel.m */; };
 		517147BB18CD7C1000BBA5C8 /* UXRFourSquareRestaurantModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171478418CD7C1000BBA5C8 /* UXRFourSquareRestaurantModel.m */; };
-		517147BC18CD7C1000BBA5C8 /* UXRFourSquareRestaurantModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171478418CD7C1000BBA5C8 /* UXRFourSquareRestaurantModel.m */; };
 		517147BD18CD7C1000BBA5C8 /* UXRFourSquareStatsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171478618CD7C1000BBA5C8 /* UXRFourSquareStatsModel.m */; };
-		517147BE18CD7C1000BBA5C8 /* UXRFourSquareStatsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171478618CD7C1000BBA5C8 /* UXRFourSquareStatsModel.m */; };
 		517147BF18CD7C1000BBA5C8 /* UXRFourSquareTimeFramesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171478818CD7C1000BBA5C8 /* UXRFourSquareTimeFramesModel.m */; };
-		517147C018CD7C1000BBA5C8 /* UXRFourSquareTimeFramesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171478818CD7C1000BBA5C8 /* UXRFourSquareTimeFramesModel.m */; };
 		517147C118CD7C1000BBA5C8 /* UXRFourSquareTipModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171478A18CD7C1000BBA5C8 /* UXRFourSquareTipModel.m */; };
-		517147C218CD7C1000BBA5C8 /* UXRFourSquareTipModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171478A18CD7C1000BBA5C8 /* UXRFourSquareTipModel.m */; };
 		517147C318CD7C1000BBA5C8 /* UXRFourSquareUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171478C18CD7C1000BBA5C8 /* UXRFourSquareUserModel.m */; };
-		517147C418CD7C1000BBA5C8 /* UXRFourSquareUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171478C18CD7C1000BBA5C8 /* UXRFourSquareUserModel.m */; };
 		517147C518CD7C1000BBA5C8 /* UXRJSONDeserializableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171478E18CD7C1000BBA5C8 /* UXRJSONDeserializableObject.m */; };
-		517147C618CD7C1000BBA5C8 /* UXRJSONDeserializableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171478E18CD7C1000BBA5C8 /* UXRJSONDeserializableObject.m */; };
 		517147C718CD7C1000BBA5C8 /* UXRFourSquareNetworkingEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171479218CD7C1000BBA5C8 /* UXRFourSquareNetworkingEngine.m */; };
-		517147C818CD7C1000BBA5C8 /* UXRFourSquareNetworkingEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171479218CD7C1000BBA5C8 /* UXRFourSquareNetworkingEngine.m */; };
 		518515CB18CD750C00ABB2D3 /* FourSquareKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 51F4F98C18CD63D40016675E /* FourSquareKit.h */; };
 		51C1CE8518CD97FD009D685F /* UXRImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C1CE8318CD97FD009D685F /* UXRImageView.m */; };
 		51C1CE8818CD982A009D685F /* UXRBaseNetworkingEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C1CE8718CD982A009D685F /* UXRBaseNetworkingEngine.m */; };
-		51C1CE8918CD982A009D685F /* UXRBaseNetworkingEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C1CE8718CD982A009D685F /* UXRBaseNetworkingEngine.m */; };
-		51C1CE8A18CD9859009D685F /* UXRImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C1CE8318CD97FD009D685F /* UXRImageView.m */; };
 		51C1CE9218CD9BF9009D685F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C1CE9118CD9BF9009D685F /* QuartzCore.framework */; };
 		51C1CE9418CD9C01009D685F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C1CE9318CD9C01009D685F /* CoreGraphics.framework */; };
 		51C1CE9818CE3F50009D685F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C1CE9718CE3F50009D685F /* CFNetwork.framework */; };
+		51ED5CA718CE4C9B008E8ED4 /* UXRFourSquareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4FA4518CD64530016675E /* UXRFourSquareTests.m */; };
+		51ED5CA818CE4CC2008E8ED4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C1CE9718CE3F50009D685F /* CFNetwork.framework */; };
+		51ED5CAA18CE4CC7008E8ED4 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51ED5CA918CE4CC7008E8ED4 /* ImageIO.framework */; };
 		51F4F92018CD633E0016675E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4F91F18CD633E0016675E /* Foundation.framework */; };
 		51F4F92E18CD633F0016675E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4F92D18CD633F0016675E /* XCTest.framework */; };
 		51F4F92F18CD633F0016675E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4F91F18CD633E0016675E /* Foundation.framework */; };
 		51F4F93118CD633F0016675E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4F93018CD633F0016675E /* UIKit.framework */; };
 		51F4F93418CD633F0016675E /* libFourSquareKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4F91C18CD633E0016675E /* libFourSquareKit.a */; };
 		51F4F93A18CD633F0016675E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51F4F93818CD633F0016675E /* InfoPlist.strings */; };
-		51F4FA4918CD64530016675E /* UXRFourSquareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4FA4518CD64530016675E /* UXRFourSquareTests.m */; };
-		51F4FA4E18CD64C70016675E /* UXRFourSquareRestaurantModel+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4FA4D18CD64C70016675E /* UXRFourSquareRestaurantModel+Validations.m */; };
-		51F4FA5118CD65380016675E /* UXRFourSquarePhotoModel+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F4FA5018CD65380016675E /* UXRFourSquarePhotoModel+Validation.m */; };
 		51F4FA5318CD65850016675E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4FA5218CD65850016675E /* CoreLocation.framework */; };
 		5D766DFF9EAE4E4DA5103694 /* libPods-FourSquareKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EF7232553A4E77A441D515 /* libPods-FourSquareKit.a */; };
 /* End PBXBuildFile section */
@@ -169,6 +141,7 @@
 		51C1CE9118CD9BF9009D685F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		51C1CE9318CD9C01009D685F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		51C1CE9718CE3F50009D685F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		51ED5CA918CE4CC7008E8ED4 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		51F4F91C18CD633E0016675E /* libFourSquareKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFourSquareKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F4F91F18CD633E0016675E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		51F4F92318CD633E0016675E /* FourSquareKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FourSquareKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -185,6 +158,8 @@
 		51F4FA4F18CD65380016675E /* UXRFourSquarePhotoModel+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UXRFourSquarePhotoModel+Validation.h"; sourceTree = "<group>"; };
 		51F4FA5018CD65380016675E /* UXRFourSquarePhotoModel+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UXRFourSquarePhotoModel+Validation.m"; sourceTree = "<group>"; };
 		51F4FA5218CD65850016675E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6600C7DF83B0458B953CCE58 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		680B49275D6440B4998E234D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		AD1002F4479F4B12B75A7D61 /* Pods-FourSquareKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourSquareKit.xcconfig"; path = "Pods/Pods-FourSquareKit.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,6 +173,7 @@
 				51C1CE9218CD9BF9009D685F /* QuartzCore.framework in Frameworks */,
 				51F4F92018CD633E0016675E /* Foundation.framework in Frameworks */,
 				5D766DFF9EAE4E4DA5103694 /* libPods-FourSquareKit.a in Frameworks */,
+				34B542D8C20A48B5954C7EBE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +181,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51ED5CAA18CE4CC7008E8ED4 /* ImageIO.framework in Frameworks */,
+				51ED5CA818CE4CC2008E8ED4 /* CFNetwork.framework in Frameworks */,
 				51F4FA5318CD65850016675E /* CoreLocation.framework in Frameworks */,
 				51F4F92E18CD633F0016675E /* XCTest.framework in Frameworks */,
 				51F4F93418CD633F0016675E /* libFourSquareKit.a in Frameworks */,
@@ -311,6 +289,7 @@
 				51F4F91E18CD633E0016675E /* Frameworks */,
 				51F4F91D18CD633E0016675E /* Products */,
 				AD1002F4479F4B12B75A7D61 /* Pods-FourSquareKit.xcconfig */,
+				680B49275D6440B4998E234D /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -326,6 +305,7 @@
 		51F4F91E18CD633E0016675E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51ED5CA918CE4CC7008E8ED4 /* ImageIO.framework */,
 				51C1CE9718CE3F50009D685F /* CFNetwork.framework */,
 				51C1CE9318CD9C01009D685F /* CoreGraphics.framework */,
 				51C1CE9118CD9BF9009D685F /* QuartzCore.framework */,
@@ -334,6 +314,7 @@
 				51F4F92D18CD633F0016675E /* XCTest.framework */,
 				51F4F93018CD633F0016675E /* UIKit.framework */,
 				22EF7232553A4E77A441D515 /* libPods-FourSquareKit.a */,
+				6600C7DF83B0458B953CCE58 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -496,7 +477,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-FourSquareKit-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -542,38 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5171479618CD7C1000BBA5C8 /* CLLocation+Testing.m in Sources */,
-				517147B818CD7C1000BBA5C8 /* UXRFourSquarePriceModel.m in Sources */,
-				517147C018CD7C1000BBA5C8 /* UXRFourSquareTimeFramesModel.m in Sources */,
-				517147AC18CD7C1000BBA5C8 /* UXRFourSquareHoursModel.m in Sources */,
-				517147A218CD7C1000BBA5C8 /* UXRFourSquareAttributesModel.m in Sources */,
-				517147C218CD7C1000BBA5C8 /* UXRFourSquareTipModel.m in Sources */,
-				51C1CE8A18CD9859009D685F /* UXRImageView.m in Sources */,
-				517147B218CD7C1000BBA5C8 /* UXRFourSquareMenuModel.m in Sources */,
-				5171479C18CD7C1000BBA5C8 /* NSString+Utils.m in Sources */,
-				517147A018CD7C1000BBA5C8 /* UXRExploreQueryBaseModel.m in Sources */,
-				517147A818CD7C1000BBA5C8 /* UXRFourSquareExploreResultsModel.m in Sources */,
-				51C1CE8918CD982A009D685F /* UXRBaseNetworkingEngine.m in Sources */,
-				517147C618CD7C1000BBA5C8 /* UXRJSONDeserializableObject.m in Sources */,
-				51F4FA4E18CD64C70016675E /* UXRFourSquareRestaurantModel+Validations.m in Sources */,
-				517147C818CD7C1000BBA5C8 /* UXRFourSquareNetworkingEngine.m in Sources */,
-				5171479E18CD7C1000BBA5C8 /* UXRBaseModel.m in Sources */,
-				517147BC18CD7C1000BBA5C8 /* UXRFourSquareRestaurantModel.m in Sources */,
-				517147AE18CD7C1000BBA5C8 /* UXRFourSquareLikesModel.m in Sources */,
-				517147BA18CD7C1000BBA5C8 /* UXRFourSquareReservationsModel.m in Sources */,
-				51F4FA5118CD65380016675E /* UXRFourSquarePhotoModel+Validation.m in Sources */,
-				517147A418CD7C1000BBA5C8 /* UXRFourSquareCategoryModel.m in Sources */,
-				517147B018CD7C1000BBA5C8 /* UXRFourSquareLocationModel.m in Sources */,
-				5171479A18CD7C1000BBA5C8 /* NSString+Location.m in Sources */,
-				5171479818CD7C1000BBA5C8 /* NSDictionary+PList.m in Sources */,
-				517147C418CD7C1000BBA5C8 /* UXRFourSquareUserModel.m in Sources */,
-				517147B418CD7C1000BBA5C8 /* UXRFourSquareOpenTime.m in Sources */,
-				517147B618CD7C1000BBA5C8 /* UXRFourSquarePhotoModel.m in Sources */,
-				51F4FA4918CD64530016675E /* UXRFourSquareTests.m in Sources */,
-				517147BE18CD7C1000BBA5C8 /* UXRFourSquareStatsModel.m in Sources */,
-				517147AA18CD7C1000BBA5C8 /* UXRFourSquareGeoCodeModel.m in Sources */,
-				5171479418CD7C1000BBA5C8 /* CLLocation+isEmpty.m in Sources */,
-				517147A618CD7C1000BBA5C8 /* UXRFourSquareContactModel.m in Sources */,
+				51ED5CA718CE4C9B008E8ED4 /* UXRFourSquareTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,7 +621,7 @@
 		};
 		51F4F94018CD633F0016675E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD1002F4479F4B12B75A7D61 /* Pods-FourSquareKit.xcconfig */;
+			baseConfigurationReference = 680B49275D6440B4998E234D /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/FourSquareKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -685,7 +635,7 @@
 		};
 		51F4F94118CD633F0016675E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD1002F4479F4B12B75A7D61 /* Pods-FourSquareKit.xcconfig */;
+			baseConfigurationReference = 680B49275D6440B4998E234D /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/FourSquareKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -699,6 +649,7 @@
 		};
 		51F4F94318CD633F0016675E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 680B49275D6440B4998E234D /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -720,6 +671,7 @@
 		};
 		51F4F94418CD633F0016675E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 680B49275D6440B4998E234D /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (

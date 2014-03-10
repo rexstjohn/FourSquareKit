@@ -4,32 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-Demo-MKNetworkKit.xcscheme</key>
+		<key>Pods-MKNetworkKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Demo-Reachability.xcscheme</key>
+		<key>Pods-Reachability.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Demo.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-FourSquareKit-MKNetworkKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-FourSquareKit-Reachability.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-FourSquareKit.xcscheme</key>
+		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,32 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>03C6C7B031F64611AEC6AA44</key>
+		<key>B8AFAEAE838546098C5090C6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1AFA7D558B284FB783BAC0C4</key>
+		<key>BA1EC8E94AEA431292A7FA05</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>685E7C7AAC8F4334BC3E4968</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>841E69EDC08F4FC6935F695D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D1354578E33744DB8B514E61</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D7C829B976214C5C9F31D192</key>
+		<key>E91CA430FA964E1CA307E999</key>
 		<dict>
 			<key>primary</key>
 			<true/>
