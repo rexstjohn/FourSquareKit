@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34B542D8C20A48B5954C7EBE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6600C7DF83B0458B953CCE58 /* libPods.a */; };
 		51C1CE9218CD9BF9009D685F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C1CE9118CD9BF9009D685F /* QuartzCore.framework */; };
 		51C1CE9418CD9C01009D685F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C1CE9318CD9C01009D685F /* CoreGraphics.framework */; };
 		51C1CE9818CE3F50009D685F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C1CE9718CE3F50009D685F /* CFNetwork.framework */; };
@@ -46,11 +45,10 @@
 		51ED5DBC18CE865C008E8ED4 /* UXRJSONDeserializableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ED5D9C18CE865C008E8ED4 /* UXRJSONDeserializableObject.m */; };
 		51ED5DBD18CE865C008E8ED4 /* UXRBaseNetworkingEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ED5DA018CE865C008E8ED4 /* UXRBaseNetworkingEngine.m */; };
 		51ED5DBE18CE865C008E8ED4 /* UXRFourSquareNetworkingEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ED5DA218CE865C008E8ED4 /* UXRFourSquareNetworkingEngine.m */; };
+		51ED5DC118CE89F6008E8ED4 /* libFourSquareKit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4F91C18CD633E0016675E /* libFourSquareKit-iOS.a */; };
 		51F4F92018CD633E0016675E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4F91F18CD633E0016675E /* Foundation.framework */; };
 		51F4F92E18CD633F0016675E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4F92D18CD633F0016675E /* XCTest.framework */; };
 		51F4F92F18CD633F0016675E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4F91F18CD633E0016675E /* Foundation.framework */; };
-		51F4F93118CD633F0016675E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4F93018CD633F0016675E /* UIKit.framework */; };
-		51F4F93418CD633F0016675E /* libFourSquareKit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4F91C18CD633E0016675E /* libFourSquareKit-iOS.a */; };
 		51F4F93A18CD633F0016675E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51F4F93818CD633F0016675E /* InfoPlist.strings */; };
 		51F4FA5318CD65850016675E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F4FA5218CD65850016675E /* CoreLocation.framework */; };
 		5983FDC59C844CD4A0B967CE /* libPods-FourSquareKit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB472C9C6C174ADAA72F421B /* libPods-FourSquareKit-iOS.a */; };
@@ -143,6 +141,7 @@
 		51ED5DA018CE865C008E8ED4 /* UXRBaseNetworkingEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRBaseNetworkingEngine.m; sourceTree = "<group>"; };
 		51ED5DA118CE865C008E8ED4 /* UXRFourSquareNetworkingEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRFourSquareNetworkingEngine.h; sourceTree = "<group>"; };
 		51ED5DA218CE865C008E8ED4 /* UXRFourSquareNetworkingEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRFourSquareNetworkingEngine.m; sourceTree = "<group>"; };
+		51ED5DBF18CE89C2008E8ED4 /* libPods-FourSquareKit-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-FourSquareKit-iOS.a"; path = "../Pods/build/Debug-iphoneos/libPods-FourSquareKit-iOS.a"; sourceTree = "<group>"; };
 		51F4F91C18CD633E0016675E /* libFourSquareKit-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFourSquareKit-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F4F91F18CD633E0016675E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		51F4F92318CD633E0016675E /* FourSquareKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FourSquareKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -175,7 +174,6 @@
 				51C1CE9418CD9C01009D685F /* CoreGraphics.framework in Frameworks */,
 				51C1CE9218CD9BF9009D685F /* QuartzCore.framework in Frameworks */,
 				51F4F92018CD633E0016675E /* Foundation.framework in Frameworks */,
-				34B542D8C20A48B5954C7EBE /* libPods.a in Frameworks */,
 				5983FDC59C844CD4A0B967CE /* libPods-FourSquareKit-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,13 +182,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51ED5DC118CE89F6008E8ED4 /* libFourSquareKit-iOS.a in Frameworks */,
 				51ED5CAE18CE620B008E8ED4 /* UIKit.framework in Frameworks */,
 				51ED5CAA18CE4CC7008E8ED4 /* ImageIO.framework in Frameworks */,
 				51ED5CA818CE4CC2008E8ED4 /* CFNetwork.framework in Frameworks */,
 				51F4FA5318CD65850016675E /* CoreLocation.framework in Frameworks */,
 				51F4F92E18CD633F0016675E /* XCTest.framework in Frameworks */,
-				51F4F93418CD633F0016675E /* libFourSquareKit-iOS.a in Frameworks */,
-				51F4F93118CD633F0016675E /* UIKit.framework in Frameworks */,
 				51F4F92F18CD633F0016675E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +311,7 @@
 		51F4F91E18CD633E0016675E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51ED5DBF18CE89C2008E8ED4 /* libPods-FourSquareKit-iOS.a */,
 				51ED5CAD18CE620A008E8ED4 /* UIKit.framework */,
 				51ED5CA918CE4CC7008E8ED4 /* ImageIO.framework */,
 				51C1CE9718CE3F50009D685F /* CFNetwork.framework */,
