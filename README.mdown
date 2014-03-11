@@ -86,13 +86,7 @@ USEAGE
     
 INSTALLATION
 
-Get the dir and run "pod install" to install the MKNetworkKit dependency. 
-
-Library integration:
-
-Until I create a Cocoapod for the project you are going to have to add FourSquareKit as a sub-project to your app and manually
-copy over all the headers you need if you want to use the library and add it as a dependency in your build-phases. That is more
-of a pain then it should be...might be easier to just run the test project and borrow the bits and pieces you need for now.
+Simply add pod 'FourSquareKit' to your project's Podfile and run pod install.
 
 REQUIREMENTS
 
