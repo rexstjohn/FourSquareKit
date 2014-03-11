@@ -103,6 +103,7 @@ REQUIREMENTS
 
 ROADMAP
 
+- More API coverage calls / fill in any missing fields on current set of models
 - Eventually: OSX version
 - iOS + OSX demo projects (w. image loading ideally)
 - Maybe more documentation
