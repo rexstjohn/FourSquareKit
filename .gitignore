@@ -1,4 +1,6 @@
 Pods/
 Podfile.lock
+iOS-Demo/Pods/
+iOS-Demo/Podfile.lock
 README.mdown
 LICENSE.md
