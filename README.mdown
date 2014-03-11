@@ -2,10 +2,15 @@ INTRODUCTION
 
 This is my FourSquare iOS SDK which helps you instantly connect and start using most major FourSquare API queries.
 
+RELEASE HISTORY
+
+- v0.0.1 submitted to the master cocoapod repo
+
 CONTENTS
 
 - Library project
 - Library w. Tests
+- Some empty folders which don't yet have content
 
 USEAGE
 
