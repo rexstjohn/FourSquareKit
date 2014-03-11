@@ -98,7 +98,7 @@ REQUIREMENTS
 
 ROADMAP
 
-- Need to create a cocoapod
-- Need to add more missing calls
-- Need to model more response objects
-- Need to write more docs
+- Eventually: OSX version
+- iOS + OSX demo projects (w. image loading ideally)
+- Maybe more documentation
+- Refactor out "Restaurants," make it more around venues
