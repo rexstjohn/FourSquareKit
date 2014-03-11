@@ -1,3 +1,10 @@
-link_with ['FourSquareKit-iOS']
+workspace 'FourSquareKit.xcworkspace'
 platform :ios, '7.0'
-pod 'MKNetworkKit', :head
+
+xcodeproj 'FourSquareKit-iOS/FourSquareKit-iOS.xcodeproj'
+
+target 'FourSquareKit-iOS' do      
+  xcodeproj 'FourSquareKit-iOS/FourSquareKit-iOS.xcodeproj'
+  link_with 'FourSquareKit-iOS'
+  pod 'MKNetworkKit', :head
+end

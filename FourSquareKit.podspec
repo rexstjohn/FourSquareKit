@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'FourSquareKit'
-  s.version          = '0.0.4'
-  s.summary          = 'A basic FourSquare SDK for iOS'
+  s.version          = '0.0.5'
+  s.summary          = 'A FourSquare SDK for iOS'
   s.description      = <<-DESC
                        Helpful for anyone wanting to immediately start working with FourSquare v2 API data.
                        DESC
@@ -27,14 +27,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.' }
   s.author           = { 'Rex St John' => 'rexstjohn@ux-rx.com' }
   s.source           = { 
-                          :git => 'https://github.com/rexstjohn/FourSquareKit.git',:tag => 'v0.0.4'
+                          :git => 'https://github.com/rexstjohn/FourSquareKit.git',:tag => 'v0.0.5'
                        }
   s.social_media_url = 'https://twitter.com/rexstjohn'
 
   s.dependency 'MKNetworkKit', '~> 0.87'
   s.requires_arc = true
-  s.source_files = 'FourSquareKit/**/*.{h,m}','FourSquareKit/**/networking/*.{h,m}','FourSquareKit/**/categories/*.{h,m}','FourSquareKit/**/models/*.{h,m}'
-  s.public_header_files = 'FourSquareKit/**/*.h'
+  s.source_files = 'FourSquareKit/*.{h,m}','FourSquareKit/networking/*.{h,m}','FourSquareKit/categories/*.{h,m}','FourSquareKit/models/*.{h,m}'
+  s.public_header_files = 'FourSquareKit/*.h'
   s.prefix_header_contents = '#import "FourSquareKit.h"'
   s.ios.frameworks = 'CFNetwork', 'ImageIO', 'CoreLocation', 'UIKit'
 end
