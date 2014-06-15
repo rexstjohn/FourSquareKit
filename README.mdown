@@ -1,101 +1,105 @@
-INTRODUCTION
+##INTRODUCTION
 
 This is my FourSquare iOS SDK which helps you instantly connect and start using most major FourSquare API queries.
 
-RELEASE HISTORY
+##RELEASE HISTORY
 
 - v0.0.1 submitted to the master cocoapod repo
 
-CONTENTS
+##CONTENTS
 
 - Library project
 - Library w. Tests
 - Some empty folders which don't yet have content
 
-USEAGE
+##USEAGE
 
 1.) Register your instance of the UXRFourSquareNetworkingEngine:
 
-    NSString *yourClientId = @"";
-    NSString *yourClientSecret = @"";
-    NSString *yourCallbackURl = @""; //yourapp://foursquare
-    
-    [UXRFourSquareNetworkingEngine registerFourSquareEngineWithClientId:yourClientId andSecret:yourClientSecret andCallBackURL:yourCallbackURl];
-    self.fourSquareEngine = [UXRFourSquareNetworkingEngine sharedInstance];
+```objc
+NSString *yourClientId = @"";
+NSString *yourClientSecret = @"";
+NSString *yourCallbackURl = @""; //yourapp://foursquare
+
+[UXRFourSquareNetworkingEngine registerFourSquareEngineWithClientId:yourClientId andSecret:yourClientSecret andCallBackURL:yourCallbackURl];
+self.fourSquareEngine = [UXRFourSquareNetworkingEngine sharedInstance];
+```
     
 2.) Start making calls!
 
-    // Get Nearby taco restaurants.
-    NSString *locationString = @"Seattle";
-    NSString *query = @"tacos";
-    [self.fourSquareEngine exploreRestaurantsNearLocation:locationString
-                                              withQuery:query
-                                    withCompletionBlock:^(NSArray *restaurants) {
-      UXRFourSquareRestaurantModel *restaurantModel = (UXRFourSquareRestaurantModel *)restaurants[0];
-    } failureBlock:^(NSError *error) {
-        // Error
-    }];
-  
-    // Fetch a "Full" Restaurant
-    [self.fourSquareEngine getRestaurantWithId:@"49efb3d1f964a520f7681fe3" withCompletionBlock:^(UXRFourSquareRestaurantModel *restaurant) {
-        // Do stuff
-    } failureBlock:^(NSError *error) {
-        // Error.
-    }];
-  
-    // Download a photo
-    [self.fourSquareEngine getPhotosForRestaurantWithId:@"4fc7c071e4b06e4ecff8e93d"
-                                    withCompletionBlock:^(NSArray *photos) {
-        UXRFourSquarePhotoModel *photoModel = (UXRFourSquarePhotoModel *)photos[0];
-        // Download the image to your image view 
-        NSURL *fullPhotoURL = [photoModel fullPhotoURL];
-        // Use this URL to fetch the photo however you like to do that...
-    } failureBlock:^(NSError *error) {
-        // Error.
-    }];
-    
-    // Get all businesses around your location
-    NSString *locationString = @"Seattle";
-    NSString *query = @"";
-    [self.fourSquareEngine exploreRestaurantsNearLocation:locationString
-                                                withQuery:query
-                                      withCompletionBlock:^(NSArray *restaurants) {
-                                          UXRFourSquareRestaurantModel *restaurantModel = (UXRFourSquareRestaurantModel *)restaurants[0];
-                                          // Do stuff.
-                                      } failureBlock:^(NSError *error) {
-                                          // Error.
-                                      }];
+```objc
+// Get Nearby taco restaurants.
+NSString *locationString = @"Seattle";
+NSString *query = @"tacos";
+[self.fourSquareEngine exploreRestaurantsNearLocation:locationString
+                                          withQuery:query
+                                withCompletionBlock:^(NSArray *restaurants) {
+  UXRFourSquareRestaurantModel *restaurantModel = (UXRFourSquareRestaurantModel *)restaurants[0];
+} failureBlock:^(NSError *error) {
+    // Error
+}];
 
-    // Download a FourSquare Image using UXRBaseNetworkingEngine
-    UXRBaseNetworkingEngine * sharedEngine = [UXRBaseNetworkingEngine sharedInstance];
-    self.networkOperation = [sharedEngine imageAtURL:fullPhotoUrl
-                                   completionHandler:^(UIImage *fetchedImage, NSURL *fetchedURL, BOOL isInCache) {
-        if(url == fetchedURL){
-             yourImageView.image = fetchedImage;
-            [yourImageView setNeedsDisplay];
-            
-            if(completion != nil){
-                completion(fetchedImage);
-            }
+// Fetch a "Full" Restaurant
+[self.fourSquareEngine getRestaurantWithId:@"49efb3d1f964a520f7681fe3" withCompletionBlock:^(UXRFourSquareRestaurantModel *restaurant) {
+    // Do stuff
+} failureBlock:^(NSError *error) {
+    // Error.
+}];
+
+// Download a photo
+[self.fourSquareEngine getPhotosForRestaurantWithId:@"4fc7c071e4b06e4ecff8e93d"
+                                withCompletionBlock:^(NSArray *photos) {
+    UXRFourSquarePhotoModel *photoModel = (UXRFourSquarePhotoModel *)photos[0];
+    // Download the image to your image view 
+    NSURL *fullPhotoURL = [photoModel fullPhotoURL];
+    // Use this URL to fetch the photo however you like to do that...
+} failureBlock:^(NSError *error) {
+    // Error.
+}];
+
+// Get all businesses around your location
+NSString *locationString = @"Seattle";
+NSString *query = @"";
+[self.fourSquareEngine exploreRestaurantsNearLocation:locationString
+                                            withQuery:query
+                                  withCompletionBlock:^(NSArray *restaurants) {
+                                      UXRFourSquareRestaurantModel *restaurantModel = (UXRFourSquareRestaurantModel *)restaurants[0];
+                                      // Do stuff.
+                                  } failureBlock:^(NSError *error) {
+                                      // Error.
+                                  }];
+
+// Download a FourSquare Image using UXRBaseNetworkingEngine
+UXRBaseNetworkingEngine * sharedEngine = [UXRBaseNetworkingEngine sharedInstance];
+self.networkOperation = [sharedEngine imageAtURL:fullPhotoUrl
+                               completionHandler:^(UIImage *fetchedImage, NSURL *fetchedURL, BOOL isInCache) {
+    if(url == fetchedURL){
+         yourImageView.image = fetchedImage;
+        [yourImageView setNeedsDisplay];
+        
+        if(completion != nil){
+            completion(fetchedImage);
         }
-    } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
-        if(error != nil){
-            errorBlock(error);
-        }
-    }];
+    }
+} errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
+    if(error != nil){
+        errorBlock(error);
+    }
+}];
+```
     
-INSTALLATION
+##INSTALLATION
 
 Simply add pod 'FourSquareKit' to your project's Podfile and run pod install.
 
-REQUIREMENTS
+##REQUIREMENTS
 
 - Cocoapods
 - CFNetwork.framework
 - ImageIO.framework
 - MKNetworkKit
 
-ROADMAP
+##ROADMAP
 
 - More API coverage calls / fill in any missing fields on current set of models
 - Eventually: OSX version
