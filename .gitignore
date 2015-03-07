@@ -4,3 +4,14 @@ iOS-Demo/Pods/
 iOS-Demo/Podfile.lock
 README.mdown
 LICENSE.md
+*.xcsettings
+
+*.xcuserstate
+
+FourSquareKit-iOS/FourSquareKit-iOS.xcodeproj/xcuserdata/jasoncross.xcuserdatad/xcschemes/xcschememanagement.plist
+
+*.xccheckout
+
+FourSquareKit.xcworkspace/xcshareddata/FourSquareKit.xccheckout
+
+*.xcworkspacedata

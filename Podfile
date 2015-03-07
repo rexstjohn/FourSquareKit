@@ -1,7 +1,5 @@
 workspace 'FourSquareKit.xcworkspace'
 platform :ios, '7.0'
-
-
 xcodeproj 'FourSquareKit-iOS/FourSquareKit-iOS.xcodeproj'
 
 target 'FourSquareKit-iOS' do      
@@ -10,6 +8,7 @@ target 'FourSquareKit-iOS' do
   pod 'MKNetworkKit', :path => 'MKNetworkKit'
 end
 
+platform :osx, '10.8'
 xcodeproj 'FourSquareKit-OSX/FourSquareKit-OSX.xcodeproj'
 
 target 'FourSquareKit-OSX' do      
