@@ -10,6 +10,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface NSAlert (MKNetworkKitAdditions)
-
++(NSAlert*) showWithError:(NSError*) networkError;
 @end
 #endif

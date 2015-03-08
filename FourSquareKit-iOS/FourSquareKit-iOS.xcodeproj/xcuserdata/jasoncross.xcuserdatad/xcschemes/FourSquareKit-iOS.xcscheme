@@ -28,7 +28,26 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "51F4F92B18CD633F0016675E"
+               BuildableName = "FourSquareKit-iOSTests.xctest"
+               BlueprintName = "FourSquareKit-iOSTests"
+               ReferencedContainer = "container:FourSquareKit-iOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "51F4F91B18CD633E0016675E"
+            BuildableName = "libFourSquareKit-iOS.a"
+            BlueprintName = "FourSquareKit-iOS"
+            ReferencedContainer = "container:FourSquareKit-iOS.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"

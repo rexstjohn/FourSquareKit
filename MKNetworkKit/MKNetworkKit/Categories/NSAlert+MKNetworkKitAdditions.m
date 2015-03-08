@@ -11,5 +11,10 @@
 
 @implementation NSAlert (MKNetworkKitAdditions)
 
++(NSAlert*) showWithError:(NSError*) networkError; {
+
+    NSAlert * alert = [NSAlert alertWithError:networkError];
+    [alert show];
+}
 @end
 #endif

@@ -188,8 +188,10 @@
 		F61E495E1AAA96FA00ED052B /* MKNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkKit.h; sourceTree = "<group>"; };
 		F61E495F1AAA96FA00ED052B /* MKNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkOperation.h; sourceTree = "<group>"; };
 		F61E49601AAA96FA00ED052B /* MKNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkOperation.m; sourceTree = "<group>"; };
-		F61E49611AAA96FA00ED052B /* MKNetworkKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MKNetworkKit.podspec; sourceTree = "<group>"; };
-		F61E49621AAA96FA00ED052B /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
+		F6E6F79F1AAB8FF60021622B /* NSAlert+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAlert+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		F6E6F7A01AAB8FF60021622B /* NSAlert+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		F6E6F7A11AAB8FF60021622B /* NSImageView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSImageView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		F6E6F7A21AAB8FF60021622B /* NSImageView+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSImageView+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,7 +319,7 @@
 		51F4F91318CD633E0016675E = {
 			isa = PBXGroup;
 			children = (
-				F61E494D1AAA96FA00ED052B /* MKNetworkKit */,
+				F61E494E1AAA96FA00ED052B /* MKNetworkKit */,
 				51ED5D6518CE865C008E8ED4 /* FourSquareKit */,
 				51F4F93518CD633F0016675E /* FourSquareKitTests */,
 				51F4F91E18CD633E0016675E /* Frameworks */,
@@ -406,17 +408,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F61E494D1AAA96FA00ED052B /* MKNetworkKit */ = {
-			isa = PBXGroup;
-			children = (
-				F61E494E1AAA96FA00ED052B /* MKNetworkKit */,
-				F61E49611AAA96FA00ED052B /* MKNetworkKit.podspec */,
-				F61E49621AAA96FA00ED052B /* README.mdown */,
-			);
-			name = MKNetworkKit;
-			path = ../MKNetworkKit;
-			sourceTree = "<group>";
-		};
 		F61E494E1AAA96FA00ED052B /* MKNetworkKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,18 +418,23 @@
 				F61E495F1AAA96FA00ED052B /* MKNetworkOperation.h */,
 				F61E49601AAA96FA00ED052B /* MKNetworkOperation.m */,
 			);
-			path = MKNetworkKit;
+			name = MKNetworkKit;
+			path = ../MKNetworkKit/MKNetworkKit;
 			sourceTree = "<group>";
 		};
 		F61E494F1AAA96FA00ED052B /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				F6E6F79F1AAB8FF60021622B /* NSAlert+MKNetworkKitAdditions.h */,
+				F6E6F7A01AAB8FF60021622B /* NSAlert+MKNetworkKitAdditions.m */,
 				F61E49501AAA96FA00ED052B /* NSData+MKBase64.h */,
 				F61E49511AAA96FA00ED052B /* NSData+MKBase64.m */,
 				F61E49521AAA96FA00ED052B /* NSDate+RFC1123.h */,
 				F61E49531AAA96FA00ED052B /* NSDate+RFC1123.m */,
 				F61E49541AAA96FA00ED052B /* NSDictionary+RequestEncoding.h */,
 				F61E49551AAA96FA00ED052B /* NSDictionary+RequestEncoding.m */,
+				F6E6F7A11AAB8FF60021622B /* NSImageView+MKNetworkKitAdditions.h */,
+				F6E6F7A21AAB8FF60021622B /* NSImageView+MKNetworkKitAdditions.m */,
 				F61E49561AAA96FA00ED052B /* NSString+MKNetworkKitAdditions.h */,
 				F61E49571AAA96FA00ED052B /* NSString+MKNetworkKitAdditions.m */,
 				F61E49581AAA96FA00ED052B /* UIAlertView+MKNetworkKitAdditions.h */,
@@ -735,6 +731,7 @@
 		};
 		51F4F94318CD633F0016675E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6140CECF3D9EE7329B1993B3 /* Pods-FourSquareKit-iOS.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -755,7 +752,7 @@
 		};
 		51F4F94418CD633F0016675E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 680B49275D6440B4998E234D /* Pods.xcconfig */;
+			baseConfigurationReference = DFBEDA7AD71F69AEC15F37B0 /* Pods-FourSquareKit-iOS.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
