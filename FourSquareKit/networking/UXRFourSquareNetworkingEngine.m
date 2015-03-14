@@ -164,11 +164,11 @@ static const NSString* DEFAULT_SECTION = @"food";
     
     // Fill the post body with the tweet
     //https://developer.foursquare.com/docs/venues/explore
-    NSMutableDictionary *postParams = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                       @"restaurants", @"query",
-                                       latLonString, @"ll",
-                                       [rangeMeters stringValue],@"radius",
-                                       nil];
+    NSDictionary *postParams = @{
+                                 @"query" : @"restaurants",
+                                 @"ll": latLonString,
+                                 @"radius" : [rangeMeters stringValue]
+                                 };
     
     MKNetworkOperation *op = [self operationWithPath:[FOURSQUARE_SEARCH_PATH copy]
                                               params:[self dictionaryWithAuthFromDictionary:postParams]

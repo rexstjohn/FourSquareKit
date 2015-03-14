@@ -82,14 +82,14 @@
                    usingEngine:networkEngine
                      animation:YES];
     
-    [self waitForCompletion:3];
+    [self waitForCompletion:2];
     if (nil != imageView.image) {
         [downloadImageExpectation fulfill];
     }
     
     // The test will pause here, running the run loop, until the timeout is hit
     // or all expectations are fulfilled.
-    [self waitForExpectationsWithTimeout:3 handler:^(NSError *error) {
+    [self waitForExpectationsWithTimeout:30 handler:^(NSError *error) {
         XCTAssertNotNil(imageView.image);
     }];
 }
@@ -119,7 +119,7 @@
     
     __block UXRFourSquareRestaurantModel *restaurantModel;
     
-    CLLocation *location = [CLLocation locationInSeattle];
+    CLLocation *location = [[CLLocation alloc]initWithLatitude:40.7 longitude:-74];
     [self.fourSquareEngine getRestaurantsNearLocation:location withCompletionBlock:^(NSArray *restaurants) {
         XCTAssert(restaurants.count != 0, @"Results should not be empty");
         restaurantModel = (UXRFourSquareRestaurantModel *)restaurants[0];
@@ -128,7 +128,7 @@
         XCTAssertNil(error, @"Error should be nil");
     }];
     
-    [self waitForExpectationsWithTimeout:3 handler:^(NSError *error) {
+    [self waitForExpectationsWithTimeout:6 handler:^(NSError *error) {
         BOOL isValid = [restaurantModel isValid];
         XCTAssertEqual(isValid, YES, @"Model was not valid");
     }];
@@ -154,7 +154,7 @@
                                           XCTAssertNil(error, @"Error should be nil");
                                       }];
     
-    [self waitForExpectationsWithTimeout:3 handler:^(NSError *error) {
+    [self waitForExpectationsWithTimeout:6 handler:^(NSError *error) {
         BOOL isValid = [restaurantModel isValid];
         XCTAssertEqual(isValid, YES, @"Model was not valid");
     }];
@@ -243,7 +243,7 @@
         XCTAssertNil(error, @"Error should be nil");
     }];
     
-    [self waitForExpectationsWithTimeout:3 handler:^(NSError *error) {
+    [self waitForExpectationsWithTimeout:6 handler:^(NSError *error) {
         BOOL isValid = [restaurantModel isValid];
         XCTAssertEqual(isValid, YES, @"Model was not valid");
         XCTAssert(restaurantModel.photos.count != 0, @"No photos were returned");
