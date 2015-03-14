@@ -10,10 +10,17 @@
 #import <XCTest/XCTest.h>
 #import "NSImageView+MKNetworkKitAdditions.h"
 #import "UXRBaseNetworkingEngine.h"
+#import "UXRFourSquareNetworkingEngine.h"
+#import "UXRFourSquareRestaurantModel.h"
+#import "UXRFourSquareRestaurantModel+Validations.h"
+#import "CLLocation+Testing.h"
+#import "UXRFourSquarePhotoModel.h"
+#import "UXRFourSquarePhotoModel+Validation.h"
 
 
 @interface UXRFourSquareXCTests : XCTestCase
 @property(atomic, assign) BOOL done;
+@property(nonatomic,strong) UXRFourSquareNetworkingEngine *fourSquareEngine;
 @end
 
 @implementation UXRFourSquareXCTests
@@ -21,6 +28,15 @@
 - (void)setUp {
     [super setUp];
     self.done = NO;
+    
+#warning YOU MUST INPUT YOUR DETAILS HERE IN ORDER TO RUN THESE TESTS!!!!!
+    NSString *yourClientId = @"";
+    NSString *yourClientSecret = @"";
+    NSString *yourCallbackURl = @""; //yourapp://foursquare
+    
+    [UXRFourSquareNetworkingEngine registerFourSquareEngineWithClientId:yourClientId andSecret:yourClientSecret andCallBackURL:yourCallbackURl];
+    self.fourSquareEngine = [UXRFourSquareNetworkingEngine sharedInstance];
+    
 }
 
 - (void)tearDown {
@@ -41,10 +57,7 @@
     return self.done;
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
-}
+#pragma mark - tests
 
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
@@ -68,7 +81,7 @@
               placeHolderImage:nil
                    usingEngine:networkEngine
                      animation:YES];
-
+    
     [self waitForCompletion:3];
     if (nil != imageView.image) {
         [downloadImageExpectation fulfill];
@@ -78,6 +91,185 @@
     // or all expectations are fulfilled.
     [self waitForExpectationsWithTimeout:3 handler:^(NSError *error) {
         XCTAssertNotNil(imageView.image);
+    }];
+}
+
+- (void) testRestaurantsQueryOSX {
+    XCTestExpectation *restaurantsQueryExpectation = [self expectationWithDescription:@"restaurants downloaded"];
+    
+    __block UXRFourSquareRestaurantModel *restaurantModel;
+    
+    [self.fourSquareEngine getRestaurantsWithCompletionBlock:^(NSArray *restaurants) {
+        XCTAssert(restaurants.count != 0, @"Results should not be empty");
+        restaurantModel = (UXRFourSquareRestaurantModel *)restaurants[0];
+        [restaurantsQueryExpectation fulfill];
+    } failureBlock:^(NSError *error) {
+        XCTAssertNil(error, @"Error should be nil");
+    }];
+    
+    [self waitForExpectationsWithTimeout:3 handler:^(NSError *error) {
+        BOOL isValid = [restaurantModel isValid];
+        XCTAssertEqual(isValid, YES, @"Model was not valid");
+    }];
+}
+
+- (void)testRestaurantsNearLocationQuery
+{
+    XCTestExpectation *restaurantsQueryExpectation = [self expectationWithDescription:@"restaurants downloaded"];
+    
+    __block UXRFourSquareRestaurantModel *restaurantModel;
+    
+    CLLocation *location = [CLLocation locationInSeattle];
+    [self.fourSquareEngine getRestaurantsNearLocation:location withCompletionBlock:^(NSArray *restaurants) {
+        XCTAssert(restaurants.count != 0, @"Results should not be empty");
+        restaurantModel = (UXRFourSquareRestaurantModel *)restaurants[0];
+        [restaurantsQueryExpectation fulfill];
+    } failureBlock:^(NSError *error) {
+        XCTAssertNil(error, @"Error should be nil");
+    }];
+    
+    [self waitForExpectationsWithTimeout:3 handler:^(NSError *error) {
+        BOOL isValid = [restaurantModel isValid];
+        XCTAssertEqual(isValid, YES, @"Model was not valid");
+    }];
+}
+
+- (void)testExploreRestaurantsNearLocationWithQuery
+{
+    
+    NSString *locationString = @"Seattle";
+    NSString *query = @"tacos";
+    
+    XCTestExpectation *restaurantsQueryExpectation = [self expectationWithDescription:@"restaurants downloaded"];
+    
+    __block UXRFourSquareRestaurantModel *restaurantModel;
+    
+    [self.fourSquareEngine exploreRestaurantsNearLocation:locationString
+                                                withQuery:query
+                                      withCompletionBlock:^(NSArray *restaurants) {
+                                          XCTAssert(restaurants.count != 0, @"Results should not be empty");
+                                          restaurantModel = (UXRFourSquareRestaurantModel *)restaurants[0];
+                                          [restaurantsQueryExpectation fulfill];
+                                      } failureBlock:^(NSError *error) {
+                                          XCTAssertNil(error, @"Error should be nil");
+                                      }];
+    
+    [self waitForExpectationsWithTimeout:3 handler:^(NSError *error) {
+        BOOL isValid = [restaurantModel isValid];
+        XCTAssertEqual(isValid, YES, @"Model was not valid");
+    }];
+}
+
+- (void)testExploreRestaurantsNearLocationWithNilQuery
+{
+    NSString *locationString = @"Seattle";
+    NSString *query = @"";
+    
+    XCTestExpectation *restaurantsQueryExpectation = [self expectationWithDescription:@"restaurants downloaded"];
+    
+    __block UXRFourSquareRestaurantModel *restaurantModel;
+    
+    [self.fourSquareEngine exploreRestaurantsNearLocation:locationString
+                                                withQuery:query
+                                      withCompletionBlock:^(NSArray *restaurants) {
+                                          XCTAssert(restaurants.count != 0, @"Results should not be empty");
+                                          restaurantModel = (UXRFourSquareRestaurantModel *)restaurants[0];
+                                          [restaurantsQueryExpectation fulfill];
+                                      } failureBlock:^(NSError *error) {
+                                          XCTAssertNil(error, @"Error should be nil");
+                                      }];
+    [self waitForExpectationsWithTimeout:3 handler:^(NSError *error) {
+        BOOL isValid = [restaurantModel isValid];
+        XCTAssertEqual(isValid, YES, @"Model was not valid");
+    }];
+}
+
+- (void)testExploreRestaurantsNearLatLonWithQuery
+{
+    NSString *query = @"pizza";
+    CLLocationCoordinate2D coordinate = [CLLocation locationInBoston].coordinate;
+    
+    XCTestExpectation *restaurantsQueryExpectation = [self expectationWithDescription:@"restaurants downloaded"];
+    
+    __block UXRFourSquareRestaurantModel *restaurantModel;
+    
+    [self.fourSquareEngine exploreRestaurantsNearLatLong:coordinate withQuery:query
+                                     withCompletionBlock:^(NSArray *restaurants) {
+                                         XCTAssert(restaurants.count != 0, @"Results should not be empty");
+                                         restaurantModel = (UXRFourSquareRestaurantModel *)restaurants[0];
+                                         [restaurantsQueryExpectation fulfill];
+                                     } failureBlock:^(NSError *error) {
+                                         XCTAssertNil(error, @"Error should be nil");
+                                     }];
+    [self waitForExpectationsWithTimeout:3 handler:^(NSError *error) {
+        BOOL isValid = [restaurantModel isValid];
+        XCTAssertEqual(isValid, YES, @"Model was not valid");
+    }];
+}
+
+- (void)testExploreRestaurantsNearLatLonWithNilQuery
+{
+    NSString *query = @"";
+    CLLocationCoordinate2D coordinate = [CLLocation locationInBoston].coordinate;
+    
+    XCTestExpectation *restaurantsQueryExpectation = [self expectationWithDescription:@"restaurants downloaded"];
+    
+    __block UXRFourSquareRestaurantModel *restaurantModel;
+    
+    [self.fourSquareEngine exploreRestaurantsNearLatLong:coordinate withQuery:query
+                                     withCompletionBlock:^(NSArray *restaurants) {
+                                         XCTAssert(restaurants.count != 0, @"Results should not be empty");
+                                         restaurantModel = (UXRFourSquareRestaurantModel *)restaurants[0];
+                                         [restaurantsQueryExpectation fulfill];
+                                     } failureBlock:^(NSError *error) {
+                                         XCTAssertNil(error, @"Error should be nil");
+                                     }];
+    [self waitForExpectationsWithTimeout:3 handler:^(NSError *error) {
+        BOOL isValid = [restaurantModel isValid];
+        XCTAssertEqual(isValid, YES, @"Model was not valid");
+    }];
+}
+
+- (void)testRestaurantQuery
+{
+    XCTestExpectation *restaurantsQueryExpectation = [self expectationWithDescription:@"restaurants downloaded"];
+    
+    __block UXRFourSquareRestaurantModel *restaurantModel;
+    
+    [self.fourSquareEngine getRestaurantWithId:@"49efb3d1f964a520f7681fe3" withCompletionBlock:^(UXRFourSquareRestaurantModel *restaurant) {
+        restaurantModel = restaurant;
+        [restaurantsQueryExpectation fulfill];
+    } failureBlock:^(NSError *error) {
+        XCTAssertNil(error, @"Error should be nil");
+    }];
+    
+    [self waitForExpectationsWithTimeout:3 handler:^(NSError *error) {
+        BOOL isValid = [restaurantModel isValid];
+        XCTAssertEqual(isValid, YES, @"Model was not valid");
+        XCTAssert(restaurantModel.photos.count != 0, @"No photos were returned");
+        XCTAssert(restaurantModel.tips.count != 0, @"No tips were returned");
+    }];
+}
+
+- (void) testPhotosQuery{
+    
+    XCTestExpectation *photosQueryExpectation = [self expectationWithDescription:@"photos downloaded"];
+    
+    __block UXRFourSquarePhotoModel *photoModel;
+    
+    [self.fourSquareEngine getPhotosForRestaurantWithId:@"4fc7c071e4b06e4ecff8e93d"
+                                    withCompletionBlock:^(NSArray *photos) {
+                                        XCTAssert(photos.count != 0, @"Results should not be empty");
+                                        photoModel = (UXRFourSquarePhotoModel *)photos[0];
+                                        [photosQueryExpectation fulfill];
+                                    } failureBlock:^(NSError *error) {
+                                        XCTAssertNil(error, @"Error should be nil");
+                                    }];
+    
+    [self waitForExpectationsWithTimeout:3 handler:^(NSError *error) {
+        BOOL isValid = [photoModel isValid];
+        XCTAssertEqual(isValid, YES, @"Model was not valid");
+        
     }];
 }
 

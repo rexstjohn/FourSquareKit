@@ -86,6 +86,8 @@
 		F61E49971AAA9C2400ED052B /* NSAlert+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F61E49951AAA9C2400ED052B /* NSAlert+MKNetworkKitAdditions.m */; };
 		F61E499A1AAA9C6900ED052B /* NSImageView+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F61E49981AAA9C6900ED052B /* NSImageView+MKNetworkKitAdditions.h */; };
 		F61E499B1AAA9C6900ED052B /* NSImageView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F61E49991AAA9C6900ED052B /* NSImageView+MKNetworkKitAdditions.m */; };
+		F6B7DB911AB394AE004DD581 /* UXRFourSquarePhotoModel+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B7DB8E1AB394AE004DD581 /* UXRFourSquarePhotoModel+Validation.m */; };
+		F6B7DB921AB394AE004DD581 /* UXRFourSquareRestaurantModel+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B7DB901AB394AE004DD581 /* UXRFourSquareRestaurantModel+Validations.m */; };
 		F6CA88EF1AAB9C9200DF85ED /* UXRFourSquareXCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CA88EE1AAB9C9200DF85ED /* UXRFourSquareXCTests.m */; };
 		F6CA89001AABE66B00DF85ED /* NSAlert+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F61E49951AAA9C2400ED052B /* NSAlert+MKNetworkKitAdditions.m */; };
 		F6CA89011AABE66B00DF85ED /* NSData+MKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F61E49701AAA98EA00ED052B /* NSData+MKBase64.m */; };
@@ -193,6 +195,10 @@
 		F61E49951AAA9C2400ED052B /* NSAlert+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
 		F61E49981AAA9C6900ED052B /* NSImageView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImageView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
 		F61E49991AAA9C6900ED052B /* NSImageView+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImageView+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		F6B7DB8D1AB394AE004DD581 /* UXRFourSquarePhotoModel+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UXRFourSquarePhotoModel+Validation.h"; path = "../../FourSquareKit-iOS/FourSquareKitTests/UXRFourSquarePhotoModel+Validation.h"; sourceTree = "<group>"; };
+		F6B7DB8E1AB394AE004DD581 /* UXRFourSquarePhotoModel+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UXRFourSquarePhotoModel+Validation.m"; path = "../../FourSquareKit-iOS/FourSquareKitTests/UXRFourSquarePhotoModel+Validation.m"; sourceTree = "<group>"; };
+		F6B7DB8F1AB394AE004DD581 /* UXRFourSquareRestaurantModel+Validations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UXRFourSquareRestaurantModel+Validations.h"; path = "../../FourSquareKit-iOS/FourSquareKitTests/UXRFourSquareRestaurantModel+Validations.h"; sourceTree = "<group>"; };
+		F6B7DB901AB394AE004DD581 /* UXRFourSquareRestaurantModel+Validations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UXRFourSquareRestaurantModel+Validations.m"; path = "../../FourSquareKit-iOS/FourSquareKitTests/UXRFourSquareRestaurantModel+Validations.m"; sourceTree = "<group>"; };
 		F6CA88EE1AAB9C9200DF85ED /* UXRFourSquareXCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRFourSquareXCTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -249,6 +255,7 @@
 		F61E48C81AAA8B4700ED052B /* FourSquareKit-OSXTests */ = {
 			isa = PBXGroup;
 			children = (
+				F6B7DB8C1AB3948F004DD581 /* Categories */,
 				F61E48C91AAA8B4700ED052B /* Supporting Files */,
 				F6CA88EE1AAB9C9200DF85ED /* UXRFourSquareXCTests.m */,
 			);
@@ -388,6 +395,17 @@
 				F61E497A1AAA98EA00ED052B /* UIImageView+MKNetworkKitAdditions.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		F6B7DB8C1AB3948F004DD581 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F6B7DB8D1AB394AE004DD581 /* UXRFourSquarePhotoModel+Validation.h */,
+				F6B7DB8E1AB394AE004DD581 /* UXRFourSquarePhotoModel+Validation.m */,
+				F6B7DB8F1AB394AE004DD581 /* UXRFourSquareRestaurantModel+Validations.h */,
+				F6B7DB901AB394AE004DD581 /* UXRFourSquareRestaurantModel+Validations.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		FFAE0FCBFDDC1DC2007157B5 /* Frameworks */ = {
@@ -620,7 +638,9 @@
 				F6CA88EF1AAB9C9200DF85ED /* UXRFourSquareXCTests.m in Sources */,
 				F6CA89051AABE66B00DF85ED /* NSString+MKNetworkKitAdditions.m in Sources */,
 				F6CA89001AABE66B00DF85ED /* NSAlert+MKNetworkKitAdditions.m in Sources */,
+				F6B7DB921AB394AE004DD581 /* UXRFourSquareRestaurantModel+Validations.m in Sources */,
 				F6CA89061AABE66B00DF85ED /* MKNetworkEngine.m in Sources */,
+				F6B7DB911AB394AE004DD581 /* UXRFourSquarePhotoModel+Validation.m in Sources */,
 				F6CA89041AABE66B00DF85ED /* NSImageView+MKNetworkKitAdditions.m in Sources */,
 				F6CA89011AABE66B00DF85ED /* NSData+MKBase64.m in Sources */,
 				F6CA89021AABE66B00DF85ED /* NSDate+RFC1123.m in Sources */,
